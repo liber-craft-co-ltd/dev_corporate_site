@@ -6,7 +6,7 @@
 /* 記事ができたら開放 ---start */
 /* ニュース */
 .sec_top_news{
-    display: none;
+    /* display: none; */
 }
 /* ブログ */
 .sec_top_blog{
