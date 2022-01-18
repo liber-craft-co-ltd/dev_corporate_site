@@ -37,10 +37,6 @@
     font-family: 'Oxygen', sans-serif; 
 }
 
-.nav_item_line{
-    /* background-color: aliceblue; */
-}
-
 .nav_item_line > a{
     display: block;
     margin: 30px;
@@ -60,6 +56,54 @@
 
 .nav_contact > a:hover{
     background-color: rgba(48, 163, 219, 1.0);
+}
+
+/* 下層メニューの挙動 */
+.menu_second_level {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+.menu_second_level li {
+    border-top: 1px solid #111;
+}
+
+.menu_appear_submenu .menu_second_level {
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px 2%;
+    background:rgba(38, 75, 141,0.8);
+    transition: all .2s ease-out;  
+}
+
+.menu_second_level:hover{
+    transition: all 1.0s ease-out;  
+}
+
+.menu_appear_submenu:hover .menu_second_level {
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu_appear_submenu .menu_second_level > li {
+    float: left;
+    width: 30%;
+    border: none;
+    text-align: center;
+    margin-left: 20%;
+    color: #fff;
+}
+
+.menu_appear_submenu .menu_second_level > li:nth-child(3n+2) {
+    margin: 0 1%;
+}
+
+.menu_second_level >li:hover{
+    color: #264b8d;
 }
 
 /* ********************* */
