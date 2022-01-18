@@ -13,12 +13,11 @@
 <body>
     <header class="header_top">
         <div class="header_wap">
-        <div class="LC_logo">
-            <a href="/">
-                <img src="./image/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
-            </a>
-        </div>
-
+            <div class="LC_logo">
+                <a href="/">
+                    <img src="./image/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
+                </a>
+            </div>
             <!-- メニューITEM -->
             <ul class="nav_item">
                 <li class="nav_item_line nav_top">
@@ -28,7 +27,7 @@
                     <a href="/service_consulting">SERVICE</a>
                 </li>
                 <li class="nav_item_line nav_newsblog">
-                    <a href="#">NEWS/BLOG</a>
+                    <a href="/news">NEWS/BLOG</a>
                 </li>
                 <li class="nav_item_line nav_about">
                     <a href="/about">ABOUT US</a>
@@ -48,7 +47,7 @@
         </h2>
     </section>
 
-        <section class="top_section_container">
+    <section class="top_section_container">
         <span class="section_title">
             <img src="./image/secTitleMark.png" alt="" width="39px" height="auto">
             <h3 >SERVICE</h3>
@@ -105,7 +104,6 @@
                     </a>
                 </li>
             </ul>
-
         </div>
     </section>
 
@@ -115,17 +113,17 @@
             <h3>NEWS</h3>
         </span>
         <div class="list_top_news_container">
+            <!-- Newsの一覧(最大5件)をJavascriptで描画 -->
             <div>
                 <ul id="list_top_news"></ul>
             </div>
             <p>
-                <a href="#">
-                    view more...
-                </a>
+                <a href="/news">view more...</a>
             </p>
         </div>
     </section>
 
+    <!-- 
     <section class="top_section_container sec_top_blog">
         <span class="section_title">
             <img src="./image/secTitleMark.png" alt="" width="39px" height="auto">
@@ -150,6 +148,8 @@
             </p>
         </div>
     </section>
+    -->
+
     <section class="top_section_container sec_top_about">
         <span class="section_sub_title">
             <h4>
@@ -177,10 +177,10 @@
     
     <section class="contact_container">
         <a href="/contact">
-        <div class="contact_btn">
-            <img src="./image/btnContact.png" alt="">
-            <p>CONTACT</p>
-        </div>
+            <div class="contact_btn">
+                <img src="./image/btnContact.png" alt="">
+                <p>CONTACT</p>
+            </div>
         </a>
     </section>
     
@@ -190,7 +190,8 @@
         </div>
     </footer>
 
-    <script src="js/cms/news_top.js"></script>
+    <script src="./js/cms/news_common.js"></script>
+    <script src="./js/cms/news_top.js"></script>
 
 </body>
 </html>

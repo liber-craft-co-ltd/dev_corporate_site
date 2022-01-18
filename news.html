@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社リベルクラフト</title>
+    <link rel="icon" href="./image/favicon.ico">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+    <header class="header_top">
+        <div class="header_wap">
+            <div class="LC_logo">
+                <a href="/">
+                    <img src="./image/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
+                </a>
+            </div>
+            <!-- メニューITEM -->
+            <ul class="nav_item">
+                <li class="nav_item_line nav_top">
+                    <a href="/">TOP</a>
+                </li>
+                <li class="nav_item_line nav_service">
+                    <a href="#">SERVICE</a>
+                </li>
+                <li class="nav_item_line nav_newsblog">
+                    <a href="#">NEWS/BLOG</a>
+                </li>
+                <li class="nav_item_line nav_about">
+                    <a href="/about">ABOUT US</a>
+                </li>
+                <li class="nav_contact">
+                    <a href="/contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <section class="sub_page_kv">
+        <div class="sub_kv_container">
+            <h3>
+                NEWS
+            </h3>
+            <p>ニュース一覧</p>
+        </div>
+    </section>
+
+    <!-- Newsの一覧をJavascriptで描画 -->
+    <section class="sec_about sec_message">
+        <div id="news_all"></div>
+    </section>
+
+    <section class="contact_container">
+        <a href="/contact">
+            <div class="contact_btn">
+                <img src="./image/btnContact.png" alt="">
+                <p>CONTACT</p>
+            </div>
+        </a>
+    </section>
+
+    <footer class="footer">
+        <div class="footer_inner">
+            <p>© 2021 LiberCraft</p>
+        </div>
+    </footer>
+
+    <script src="./js/cms/news_common.js"></script>
+    <script src="./js/cms/news_all.js"></script>
+
+</body>
+</html>

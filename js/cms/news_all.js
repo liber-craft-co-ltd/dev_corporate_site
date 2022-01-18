@@ -1,4 +1,4 @@
-const query = "https://liber-craft.microcms.io/api/v1/corporate-news?orders=-createdAt&limit=5"
+const query = "https://liber-craft.microcms.io/api/v1/corporate-news?orders=-createdAt"
 
 fetch(query, {
   headers: {
@@ -8,6 +8,6 @@ fetch(query, {
   .then(res => res.json())
   .then(res => {
     const NewsListHtmlTagStr = getNewsListHtmlTagStr(res.contents);
-    const targetHtmlTag = document.getElementById("list_top_news");
+    const targetHtmlTag = document.getElementById("news_all");
     targetHtmlTag.innerHTML = NewsListHtmlTagStr;
   })
