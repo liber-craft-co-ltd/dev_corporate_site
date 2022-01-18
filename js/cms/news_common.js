@@ -33,12 +33,12 @@ const getNewsPostHtmlTagStr = (content) => {
   category = content.category[0]
   title = content.title
   body = content.body
-  imageUrl = getImageUrl(content)
-  const newsPostDetailHtmlStr = newsPostDetailHtmlString(date, category, title, body, imageUrl)
+  imageTag = getImageTag(content)
+  const newsPostDetailHtmlStr = newsPostDetailHtmlString(date, category, title, body, imageTag)
   return newsPostDetailHtmlStr
 };
 
-const newsPostDetailHtmlString = (date, category, title, body, imageUrl) => {
+const newsPostDetailHtmlString = (date, category, title, body, imageTag) => {
   return `
     <div class="news_post_head">
       <div class="news_post_title">${title}</div>
@@ -47,7 +47,7 @@ const newsPostDetailHtmlString = (date, category, title, body, imageUrl) => {
     </div>
     <div class="news_post_content">
       <div class="news_post_img">
-        <img src=${imageUrl} width=30%> 
+        ${imageTag}
       </div>
       <div class="news_post_body">${body}</div>
     </div>
@@ -66,9 +66,9 @@ const parseCreatedAtDate = (dateAt) => {
   `
 };
 
-const getImageUrl = (content) => {
+const getImageTag = (content) => {
   if (content.image) {
-    return content.image.url
+    return `<img src=${content.image.url} width=30%> `
   }
   else {
     return ""
