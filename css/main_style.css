@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@100;400&family=Oxygen:wght@300&display=swap');
 
-/* 記事ができたら開放 ---start */
-.nav_newsblog{
-    display: none;
-}
-/* 記事ができたら開放 ---end */
-
 /* ********************* */
 /* メニュー部分 */
 /* ********************* */
@@ -75,7 +69,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 40px 2%;
-    background:rgba(38, 75, 141,0.8);
+    background:rgba(38, 75, 141,0.9);
     transition: all .2s ease-out;  
 }
 
@@ -201,4 +195,166 @@
     letter-spacing: 2px;
     margin-left: 12px;
     margin-top: 2px;
+}
+
+/* レスポンシブメニュー */
+@keyframes fade-in {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+.sp-menu {
+    display: none;
+  }
+
+  .overlay{
+    display: none;
+  }
+
+/* ********************* */
+/* レスポンシブ対応 */
+/* 横幅600px以下の場合の挙動 */
+/* ********************* */
+@media (max-width: 600px) {
+
+    .sp-menu{
+        display:  initial;
+    }
+
+    .nav_item{
+        display: none;
+    }
+
+    .LC_logo{
+        display: none;
+    }
+
+    .topLogo img{
+        margin: 10px 0;
+        width: 100px;
+      }
+      
+      .acd-check{
+        display: none;
+      }
+      
+      #acd-check:checked + .acMenu{
+        display: block;
+      }
+      
+      .acMenu{
+        animation-duration: 0.5s;
+        animation-name: fade-in;
+
+        
+      }
+  
+      .acMenu > li > a{
+        font-size: 11px;
+        color: #333;
+      }
+
+      .sp-menu {
+        position:absolute;
+        position: fixed;
+        z-index:3;
+        top: 12px;
+        width: 100%;
+        background-color: #fff;
+      }
+      
+      .sp-menu .topLogo{
+        position: absolute;
+        top: 10px;
+        left: 10%;
+      }
+        
+      .sp-menu #open {
+        position: relative;
+        left: 85%;
+        font-size: 32px;
+        line-height: 64px;
+        cursor: pointer;
+      }
+      
+      .sp-menu #open.hide {
+        display: none;
+      }
+
+      .acMenu{
+        display: none;
+      }
+
+
+      .overlay {
+        display: initial;
+        position: absolute;
+        z-index:3;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.95);
+        text-align: center;
+        padding: 64px;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .6s;
+      }
+        
+      .overlay.show {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      
+      .overlay #close {
+        position: absolute;
+        top: 30px;
+        right: 42px;
+        font-size: 32px;
+        cursor: pointer;
+      }
+        
+      .overlay ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .overlay li {
+        margin-top: 21px;
+        opacity: 0;
+        transform: translateY(16px);
+        transition: opacity .3s, transform .3s;
+        color: #333;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-family: 'Oxygen', cursive;
+      }
+      
+      .overlay.show li {
+        opacity: 1;
+        transform: none;
+      }
+        
+      .overlay.show li:nth-child(1) {
+        transition-delay: .1s;
+      }
+      
+      .overlay.show li:nth-child(2) {
+        transition-delay: .2s;
+      }
+      
+      .overlay.show li:nth-child(3) {
+        transition-delay: .3s;
+      }
 }

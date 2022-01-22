@@ -8,6 +8,6 @@ fetch(query, {
   .then(res => res.json())
   .then(res => {
     const NewsListHtmlTagStr = getNewsListHtmlTagStr(res.contents);
-    const targetHtmlTag = document.getElementById("list_top_news");
+    const targetHtmlTag = document.getElementById("lists_top_news");
     targetHtmlTag.innerHTML = NewsListHtmlTagStr;
   })
