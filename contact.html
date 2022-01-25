@@ -82,7 +82,7 @@
     </section>
 
     <section class="sec_contact">
-        <form action="">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePF-HZwh0xq_uUtNYgHsaqLIpG5azumH9lsTQLcx4QQDYZdQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
             <!-- 名前 -->
             <div class="contact_content_item">
                 <div class="contact_content_heading">
@@ -92,7 +92,7 @@
                     </p>
                 </div>
                 <div class="contact_detail">
-                    <input class="contact_input" type="text">
+                    <input class="contact_input" type="text" name="entry.2140654344" required>
                 </div>
             </div>
 
@@ -105,11 +105,11 @@
                     </p>
                 </div>
                 <div class="contact_detail">
-                    <input class="contact_input" type="text">
+                    <input class="contact_input" type="text" name="entry.1486343906" required>
                 </div>
             </div>
 
-            <!-- 会社名 -->
+            <!-- メールアドレス -->
             <div class="contact_content_item">
                 <div class="contact_content_heading">
                     <p>
@@ -118,7 +118,7 @@
                     </p>
                 </div>
                 <div class="contact_detail">
-                    <input class="contact_input" type="text">
+                    <input class="contact_input" type="email" name="entry.1419470964" required>
                 </div>
             </div>
         
@@ -126,12 +126,12 @@
             <div class="contact_content_item">
                 <div class="contact_content_heading">
                     <p>
-                        <span class="contact_content_label_must">必須</span>
+                        <span class="contact_content_label_must" style="visibility: hidden;">必須</span>
                         <span class="contact_content_label">電話番号</span>
                     </p>
                 </div>
                 <div class="contact_detail">
-                    <input class="contact_input" type="text">
+                    <input class="contact_input" type="tel" name="entry.1136647211">
                 </div>
             </div>
 
@@ -144,7 +144,7 @@
                     </p>
                 </div>
                 <div class="contact_detail">
-                    <textarea class="contact_textarea"></textarea>
+                    <textarea class="contact_textarea" name="entry.1990905103" required></textarea>
                 </div>
             </div>
 
@@ -155,8 +155,11 @@
                 <button class="btnSubmit" type="submit">送 信</button>
             </div>
 
-
+            <!-- 遷移先のURL -->
+            <script type="text/javascript">var submitted = false;</script>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='index.html';}"></iframe>
         </form>
+
     </section>
 
     <footer class="footer">
