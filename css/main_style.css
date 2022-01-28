@@ -181,6 +181,7 @@
 
 
 .section_title{
+    color: #333;
     max-width: 80%;
     margin: 0 auto;
     display: flex;
@@ -189,12 +190,13 @@
 }
 
 .section_title h3{
-    font-family: 'Oxygen', cursive;
-    font-size: 27px;
-    font-weight: 200;
-    letter-spacing: 2px;
-    margin-left: 12px;
-    margin-top: 2px;
+  font-family: 'Oxygen', cursive;
+  color: #333;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin-left: 12px;
+  margin-top: 2px;
 }
 
 /* レスポンシブメニュー */
@@ -258,7 +260,7 @@
       }
   
       .acMenu > li > a{
-        font-size: 11px;
+        font-size: 15px;
         color: #333;
       }
 
@@ -337,7 +339,7 @@
         transition: opacity .3s, transform .3s;
         color: #333;
         letter-spacing: 1px;
-        font-size: 14px;
+        font-size: 21px;
         font-family: 'Oxygen', cursive;
       }
       

@@ -9,6 +9,7 @@
     <link rel="icon" href="./image/favicon.ico">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/main_style.css">
+    <link rel="stylesheet" href="css/news_style.css">
 </head>
 <body>
     <header class="header_top">
@@ -83,19 +84,26 @@
         </div>
     </section>
 
-    <!-- Newsの一覧をJavascriptで描画 -->
-    <section class="sec_about sec_message">
-        <div id="news_all"></div>
+    <section class="news_container">
+        <span class="section_title">
+            <img src="./image/secTitleMark.png" alt="" width="39px" height="auto">
+            <h3>NEWS一覧</h3>
+        </span>
+
+        <!-- Newsの一覧をJavascriptで描画 -->
+        <div class="sec_news_main">
+            <ul id="news_all"></ul>
+        </div>
     </section>
 
-    <section class="contact_container">
+    <div class="contact_container">
         <a href="/contact">
             <div class="contact_btn">
                 <img src="./image/btnContact.png" alt="">
                 <p>CONTACT</p>
             </div>
         </a>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="footer_inner">

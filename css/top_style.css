@@ -179,14 +179,11 @@
     align-items: center;
     padding: 21px 0;
     border-bottom: 1px solid #333;
-    /* border-top: 1px solid #333; */
 }
 
 #lists_top_news{
     border-top: 1px solid #333;
 }
-
-
 
 .top_news_info{
     display: flex;
@@ -204,7 +201,7 @@
 
 .news_kind{
     width: 63px;
-    margin-right: 48px;
+    margin-right: 72px;
     background-color: #264b8d;
     border-radius: 1px;
     padding: 5px 0;
