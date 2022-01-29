@@ -84,8 +84,14 @@
 /* ********************* */
 /* POST_NEWS */
 /* ********************* */
+#news_post_detail{
+    width:80%;
+    margin:0 auto;   
+}
+
 .news_post_news_option_area{
     display:flex;
+    margin-bottom: 21px;
 }
 
 .news_post_category{
@@ -103,5 +109,22 @@
     color:#333;
     font-family: 'Oxygen', cursive;
     letter-spacing: 1px;
-    margin-right: 21px;
+    margin: auto 0;
+    margin-right: 15px;
+}
+
+.news_post_title{
+    font-family: 'Noto Sans Japanese', sans-serif; 
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.news_post_content{
+    margin-top:36px ;
+    margin-bottom:150px ;
+    font-family: 'Noto Sans Japanese', sans-serif; 
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 15px;
 }
