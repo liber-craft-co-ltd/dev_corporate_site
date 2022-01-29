@@ -84,7 +84,7 @@
 /* ********************* */
 /* POST_NEWS */
 /* ********************* */
-#news_post_detail{
+.sec_news_post{
     width:80%;
     margin:0 auto;   
 }
@@ -127,4 +127,9 @@
     color: #333;
     letter-spacing: 1px;
     font-size: 15px;
+}
+
+.news_post_content p{
+    width: 80%;
+    line-height: 21px;
 }
