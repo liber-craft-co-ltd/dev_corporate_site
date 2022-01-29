@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
 
+.nav_newsblog > a{
+    border-bottom: solid 1px #264b8d;
+}
+
 /* ********************* */
 /* サブキービジュアル */
 /* ********************* */
@@ -48,6 +52,7 @@
 }
 
 .news_date{
+    color: #333;
     font-family: 'Oxygen', cursive;
     letter-spacing: 1px;
     margin-right: 21px;
@@ -74,4 +79,29 @@
     color: #333;
     font-size: 18px;
     letter-spacing: 2px;
+}
+
+/* ********************* */
+/* POST_NEWS */
+/* ********************* */
+.news_post_news_option_area{
+    display:flex;
+}
+
+.news_post_category{
+    background-color: #264b8d;
+    color: #fff;
+    font-family: 'Noto Sans Japanese', sans-serif; 
+    width: 63px;
+    border-radius: 1px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.news_post_date{
+    color:#333;
+    font-family: 'Oxygen', cursive;
+    letter-spacing: 1px;
+    margin-right: 21px;
 }

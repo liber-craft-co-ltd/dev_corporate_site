@@ -41,9 +41,11 @@ const getNewsPostHtmlTagStr = (content) => {
 const newsPostDetailHtmlString = (date, category, title, body, imageTag) => {
   return `
     <div class="news_post_head">
+      <div class="news_post_news_option_area">
+        <div class="news_post_date">${date}</div>
+        <div class="news_post_category">${category}</div>
+      </div>
       <div class="news_post_title">${title}</div>
-      <div class="news_post_date">${date}</div>
-      <div class="news_post_category">${category}</div>
     </div>
     <div class="news_post_content">
       <div class="news_post_img">
