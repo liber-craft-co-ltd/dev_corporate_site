@@ -130,6 +130,10 @@
 }
 
 .news_post_content p{
-    width: 80%;
-    line-height: 21px;
+    width: 90%;
+    line-height: 27px;
+}
+
+.news_post_img{
+    margin-bottom:21px ;
 }
