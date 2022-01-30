@@ -28,7 +28,6 @@ const newsItemHtmlString = (id, date, category, title) => {
 
 // News記事詳細を取得するための関数群
 const getNewsPostHtmlTagStr = (content) => {
-  console.log(content)
   date = parseCreatedAtDate(content.publishedAt)
   category = content.category[0]
   title = content.title
