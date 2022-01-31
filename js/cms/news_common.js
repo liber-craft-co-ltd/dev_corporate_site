@@ -69,7 +69,7 @@ const parseCreatedAtDate = (dateAt) => {
 
 const getImageTag = (content) => {
   if (content.image) {
-    return `<img src=${content.image.url} width=40%> `
+    return `<img src=${content.image.url} > `
   }
   else {
     return ""
