@@ -73,7 +73,7 @@
 
 .contact_confilm{
     font-family: 'Noto Sans Japanese', sans-serif; 
-    padding: 100px 0;
+    padding-bottom: 100px;
     width: 60%;
     margin: 0 auto;
     text-align: center;
@@ -97,6 +97,7 @@
 
 .agree-policy{
     text-align: center;
+    margin: 54px 0;
 }
 
 .btnSubmit{
@@ -110,3 +111,8 @@
 
 }
 
+
+.btnSubmit:hover{
+    background-color: #6e6e6e;
+    transition: all .1s ease-out; 
+}
