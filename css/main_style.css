@@ -150,6 +150,7 @@
 
 .contact_btn:hover{
     background-color: #30a3db;
+    transition: all .1s ease-out; 
 }
 
 .contact_btn img{
