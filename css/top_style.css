@@ -179,6 +179,7 @@
     align-items: center;
     padding: 21px 0;
     border-bottom: 1px solid #333;
+    font-family: 'Noto Sans Japanese', sans-serif; 
 }
 
 #lists_top_news{
