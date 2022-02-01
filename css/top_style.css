@@ -287,4 +287,46 @@
     font-family: 'Oxygen', cursive;
 }
 
+/* ********************* */
+/* レスポンシブ対応 */
+/* 横幅600px以下の場合の挙動 */
+/* ********************* */
+@media (max-width: 900px) {
+    .service_item_link{
+        display: block;
+        margin: 0 auto;
+    }
 
+    .service_item_link > li:nth-child(2){
+        margin-top: 60px;        
+    }
+
+    .section_sub_title > p{
+        font-size: 54px;
+    }
+
+    .list_top_news{
+        display: block;
+    }
+
+    .news_date{
+        margin-right: 0px;
+    }
+
+    .news_kind{
+        margin-left: 12px;
+    }
+    
+    .list_top_news h5{
+        margin-left: 21px;
+        padding: 12px 0;
+    }
+
+    .top_about_msg{
+        width: 85%;
+    }
+
+    .about_viwemore{
+        justify-content: flex-start;
+    }
+}
