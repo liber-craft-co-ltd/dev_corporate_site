@@ -265,7 +265,7 @@
 .top_about_msg_wrapper > p{
     width: 60%;
     font-family: 'Noto Sans Japanese', sans-serif; 
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #333; 
     font-size: 14px;
     line-height: 27px;
@@ -290,12 +290,16 @@
 
 /* ********************* */
 /* レスポンシブ対応 */
-/* 横幅600px以下の場合の挙動 */
+/* 横幅900px以下の場合の挙動 */
 /* ********************* */
 @media (max-width: 900px) {
     .service_item_link{
         display: block;
         margin: 0 auto;
+    }
+
+    .top_service_item_conteiner{
+        width:85%;
     }
 
     .service_item_link > li:nth-child(2){
@@ -316,11 +320,20 @@
 
     .news_kind{
         margin-left: 12px;
+        margin-right:0;
     }
     
     .list_top_news h5{
         margin-left: 21px;
         padding: 12px 0;
+    }
+
+    .top_about_msg_wrapper{
+        width:100%;
+    }
+
+    .top_about_msg_wrapper > p{
+        width:85%;
     }
 
     .top_about_msg{

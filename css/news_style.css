@@ -146,3 +146,24 @@
     color: #264b8d;
     text-decoration: underline;
 }
+
+/* ********************* */
+/* レスポンシブ対応 */
+/* 横幅900px以下の場合の挙動 */
+/* ********************* */
+@media (max-width: 900px) {
+    .list_top_news{
+        display: block;
+        padding: 24px 9px;
+    }
+
+    .list_top_news > h5{
+        margin-left: 0px;
+        padding: 12px 0;
+        font-size: 15px;
+    }
+
+    .sub_page_kv{
+        background-size: 90%;
+    }
+}
