@@ -238,3 +238,87 @@
 .content_corpo > img{
     margin-top: 54px;
 }
+
+/* ********************* */
+/* レスポンシブ対応 */
+/* 横幅900px以下の場合の挙動 */
+/* ********************* */
+@media (max-width: 900px) {
+
+    .sub_page_kv {
+        background-size: 90%;  
+    }
+
+    .sub_page_kv_corpo{
+    background-size: 90%;
+    }
+
+    .tab-group{
+        font-size: 11px;
+    }
+
+    .panel > p{
+        width: 80%;
+    }
+
+    .flow_container{
+        width: 70%;
+    }
+
+    .flow_container > img{
+        width: 180px;
+    }
+
+    .content_area{
+        display: block;
+        width: 85%;
+    }
+
+    .content_area > img{
+        width: 210px;
+        margin: 0 auto;
+    }
+
+    .content_text_area{
+        width: 90%;
+        margin: 0 auto;
+        margin-right: 0px;
+    }
+
+    .content_corpo_text_area{
+        width: 90%;
+        margin: 0 auto;
+        margin-right: 0px;       
+    }
+
+    .books_area{
+        margin-left:0px;
+    }
+
+    .img_excelData_book{
+        margin-left:0px;
+    }
+
+    .book_detail{
+        margin-right: 9px;
+    }
+
+    .book_title{
+        font-size: 11px;
+    }
+
+    .img_Btnamazon{
+        margin-top:21px;
+    }
+
+    .img_excelData_book > img{
+        width: 66px;
+    }
+
+    .content_corpo > img{
+        width: 250px;
+        height: auto;
+        margin-top: 21px;
+        margin-left: 18px;
+    }
+}
