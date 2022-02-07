@@ -128,3 +128,42 @@
     font-size: 15px;
     line-height: 30px;
 }
+
+/* ********************* */
+/* レスポンシブ対応 */
+/* 横幅900px以下の場合の挙動 */
+/* ********************* */
+@media (max-width: 900px) {
+    .sub_page_kv {
+        background-size: 90%;  
+    }
+
+    .sub_kv_container > h3{
+        font-size: 72px;
+    }
+
+    .contact_content_item{
+        display: block;
+        width: 80%;
+    }
+
+    .contact_content_heading{
+        margin-bottom: 15px;
+    }
+
+    .contact_input{
+        width: 90%;
+    }
+
+    .contact_textarea{
+        width: 90%;
+    }
+
+    .privacy_policy{
+        width: 100%;
+    }
+
+    .privacy-policy-detail{
+        width: 90%;
+    }
+}
