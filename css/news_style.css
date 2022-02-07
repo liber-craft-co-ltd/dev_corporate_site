@@ -154,13 +154,17 @@
 @media (max-width: 900px) {
     .list_top_news{
         display: block;
-        padding: 24px 9px;
+        padding: 12px 9px;
     }
 
     .list_top_news > h5{
         margin-left: 0px;
         padding: 12px 0;
         font-size: 15px;
+    }
+
+    #news_all{
+        width: 75%;
     }
 
     .sub_page_kv{

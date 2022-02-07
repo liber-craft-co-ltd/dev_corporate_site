@@ -143,3 +143,66 @@ th{
 td{
     line-height: 21px;
 }
+
+/* ********************* */
+/* レスポンシブ対応 */
+/* 横幅900px以下の場合の挙動 */
+/* ********************* */
+@media (max-width: 900px) {
+
+    .sub_page_kv{
+        background-size: 90%;
+    }
+    
+    .sec_about{
+        max-width: 90%;
+    }
+
+    .message_item_container{
+        display: block;
+        margin: 0;
+    }
+
+    .message_item_container > img{
+        padding-left: 54px;
+        margin: 0 auto;
+    }
+
+    .about_section_title p{
+        font-size: 54px;
+    }
+
+    .message_item_container > p{
+        width: 100%;
+        margin-left: 10%;
+        padding-top: 21px;
+    }
+
+    .identity_item_container{
+        display: block;
+        margin: 0;
+    }
+
+    .identity_item_container > p{
+        width: 100%;
+        margin-left: 10%;
+        padding-bottom: 30px;
+    }
+
+    .identity_item_container > img{
+        padding-left: 42px;
+        margin: 0 auto;
+    }
+
+    .table_company{
+        width: 90%;
+    }
+
+    th{
+        width: 110px;
+    }
+
+    tr{
+        padding: 21px 0;
+    }
+}
