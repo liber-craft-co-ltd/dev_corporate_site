@@ -170,4 +170,17 @@
     .sub_page_kv{
         background-size: 90%;
     }
+
+    .sec_news_post{
+        width: 90%;
+    }
+
+    .news_post_content p{
+        margin: 0 auto;
+    }
+
+    
+
+
+
 }
