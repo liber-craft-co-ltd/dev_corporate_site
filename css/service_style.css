@@ -98,7 +98,7 @@
 }
 
 .flow_titile{
-    font-family: 'Oxygen', cursive;
+    font-family: 'Noto Sans Japanese', sans-serif;
     font-size: 120px;
     letter-spacing: 1px;
     color: #eff1f5;
@@ -311,7 +311,7 @@
     .flow_line {
         position: relative;
         top: 0;
-        left: 63px;
+        left: 31px;
         width: 1px;
         height: 30px;
         margin: 0;
@@ -338,6 +338,10 @@
         left: -15%;
         top: 6px;
         font-size: 60px;
+    }
+
+    .consulting_flow_item{
+        margin: 0;
     }
 
     .tab-group{
