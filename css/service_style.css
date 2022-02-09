@@ -367,9 +367,13 @@
     }
 
     .content_text_area{
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        margin-right: 0px;
+        margin-top:18px;
+    }
+
+    .content_line{
+        width: 80%;
     }
 
     .content_corpo_text_area{
