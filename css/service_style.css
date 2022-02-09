@@ -300,6 +300,10 @@
         background-size: 90%;  
     }
 
+    .sub_kv_container > h3{
+        font-size: 90px;
+    }
+
     .sub_page_kv_corpo{
     background-size: 90%;
     }
@@ -331,7 +335,7 @@
     .flow_titile{
         transform: rotate(0deg);
         position: relative;
-        left: 13%;
+        left: -15%;
         top: 6px;
         font-size: 60px;
     }
