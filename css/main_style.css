@@ -67,15 +67,12 @@
 .menu_appear_submenu .menu_second_level {
     position: absolute;
     left: 0;
+    top: 70px;
     box-sizing: border-box;
     width: 100%;
-    padding: 40px 2%;
+    padding: 60px 2%;
     background:rgba(38, 75, 141,0.9);
-    transition: all .2s ease-out;  
-}
-
-.menu_second_level:hover{
-    transition: all 1.0s ease-out;  
+    transition: all .3s ease-in-out;  
 }
 
 .menu_appear_submenu:hover .menu_second_level {
