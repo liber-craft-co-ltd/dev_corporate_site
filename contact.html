@@ -189,10 +189,34 @@
                 </div>
             </div>
 
+            <!-- googlerecapcha -->
+            <input type="hidden" name="recaptchaToken" id="recaptchaToken">
+
             <div class="contact_confilm">
                 <button class="btnSubmit" type="submit">送 信</button>
             </div>
             
+            <!-- googlerecapcha -->
+            <script src="https://www.google.com/recaptcha/api.js?render=6Ld0cjceAAAAABWSvF-GFUbAh0UDRqFiiI0g-dKb"></script>
+            <script>
+                document.getElementById("mail_form").addEventListener('submit', onSubmit);
+                 
+                function onSubmit(e) 
+                {
+                    e.preventDefault();
+                    grecaptcha.ready(function() 
+                    {
+                        grecaptcha.execute('6Ld0cjceAAAAABWSvF-GFUbAh0UDRqFiiI0g-dKb', {action: 'submit'}).then(function(token)
+                        {
+                            // Add your logic to submit to your backend server here.
+                            var recaptchaToken = document.getElementById('recaptchaToken');
+                            recaptchaToken.value = token;
+                            document.getElementById("mG61Hd").submit();
+                        });
+                    });
+                }
+                </script>                
+
             <!-- 遷移先のURL -->
             <script type="text/javascript">
                 var submitted = false;
