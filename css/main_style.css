@@ -79,14 +79,13 @@
     top: 70px;
     visibility: visible;
     opacity: 1;
+    display: flex;   
 }
 
 .menu_appear_submenu .menu_second_level > li {
-    float: left;
-    width: 30%;
+    margin: 0 auto;
     border: none;
     text-align: center;
-    margin-left: 20%;
     color: #fff;
 }
 
