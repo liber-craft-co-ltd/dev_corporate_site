@@ -52,8 +52,8 @@
 .flow_container > p{
     margin: 72px 0;
     font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 15px;
-    letter-spacing: 1px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
     color: #333;
 }
 
@@ -181,13 +181,13 @@
 /* 事例ピックアップのタブ切り替え ---end */
 
 .panel > p{
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
-    line-height: 20px;
+    line-height: 24px;
     width: 60%;
     margin: 0 auto;
     padding: 80px 0 20px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
 }
 
 .content_area_container{
@@ -216,7 +216,7 @@
 }
 
 .txt_title{
-    font-size: 15px;
+    font-size: 16px;
     color: #333;
     font-weight: bold;
     letter-spacing: 3px;
@@ -226,11 +226,11 @@
 }
 
 .txt_main{
-    font-size: 14px;
+    font-size: 15px;
     color: #333;
     margin-top: 30px;
     text-align: left;
-    line-height: 24px;
+    line-height: 27px;
     letter-spacing: 1.5px;
     display: inline-block;
 }
