@@ -45,8 +45,8 @@
 .section_title h3{
     font-family: 'Oxygen', cursive;
     color: #333;
-    font-size: 24px;
-    font-weight: 100;
+    font-size: 27px;
+    font-weight: 300;
     letter-spacing: 2px;
     margin-left: 12px;
     margin-top: 2px;
@@ -62,7 +62,7 @@
 
 .section_sub_title h4{
     font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: 3px;
     color: #333;
@@ -127,7 +127,7 @@
     text-align: center;
     margin-top: 27px;
     line-height: 27px;  
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 3px;
     font-weight: 600;
 }
@@ -137,8 +137,8 @@
 }
 
 .top_service_under_wrapper > p{
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 15px;
+    line-height: 24px;
     letter-spacing: 1.5px;
 }
 
@@ -149,7 +149,7 @@
 .top_service_taglist > li{
     display: inline-block;
     color: rgb(51,51,51,0.5);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 21px;
 }
 
@@ -194,26 +194,25 @@
 
 .news_date{
     margin-right: 48px;
-    font-size: 15px;
+    font-size: 16px;
     color: #333;
     font-family: 'Oxygen', cursive;
     letter-spacing: 1px;
 }
 
 .news_kind{
-    width: 63px;
     margin-right: 72px;
     background-color: #264b8d;
     border-radius: 1px;
-    padding: 5px 0;
+    padding: 9px;
     text-align: center;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     font-family: 'Noto Sans Japanese', sans-serif; 
 }
 
 .list_top_news_container * h5{
-    font-size: 14px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -263,11 +262,11 @@
 }
 
 .top_about_msg_wrapper > p{
-    width: 60%;
+    width: 62%;
     font-family: 'Noto Sans Japanese', sans-serif; 
     letter-spacing: 1px;
     color: #333; 
-    font-size: 14px;
+    font-size: 15px;
     line-height: 27px;
 }
 
