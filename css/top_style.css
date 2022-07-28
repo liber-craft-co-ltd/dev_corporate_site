@@ -87,7 +87,7 @@
 /* ********************* */
 
 .top_service_item_conteiner{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -97,10 +97,6 @@
     font-family: 'Noto Sans Japanese', sans-serif; 
     letter-spacing: 1px;
     color: #333; 
-}
-
-.service_item_link > li:nth-child(odd){
-    margin-right: 120px;
 }
 
 .service_item_link > li{
@@ -134,6 +130,11 @@
 
 .top_service_under_wrapper{
     padding: 0 56px;
+}
+
+.top_service_under_wrapper > p > img{
+    display: block;
+    margin: 0 auto;
 }
 
 .top_service_under_wrapper > p{
@@ -301,8 +302,10 @@
         width:85%;
     }
 
-    .service_item_link > li:nth-child(2){
+    .service_item_link > li:nth-child(even){
+        margin-bottom: 60px;        
         margin-top: 60px;        
+
     }
 
     .section_sub_title > p{
@@ -337,6 +340,7 @@
 
     .top_about_msg{
         width: 85%;
+        padding-left: 30px;
     }
 
     .about_viwemore{
