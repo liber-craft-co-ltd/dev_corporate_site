@@ -89,9 +89,9 @@
     color: #fff;
 }
 
-.menu_appear_submenu .menu_second_level > li:nth-child(3n+2) {
-    margin: 0 1%;
-}
+/* .menu_appear_submenu .menu_second_level > li:nth-child(3n+2) {
+    margin: 0 20px;
+} */
 
 .menu_second_level >li:hover{
     color: #264b8d;
