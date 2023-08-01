@@ -1,147 +1,171 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
 
-.nav_about > a{
-    border-bottom: solid 1px #264b8d;
+.nav_about > a {
+  border-bottom: solid 1px #264b8d;
 }
 
 /* ********************* */
 /* サブキービジュアル */
 /* ********************* */
-.sub_page_kv{
-    background-image: url(../image/about/about_key_back.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 70%;
-    background-position-y: 50% ;
-    background-size: 40%;
-    margin-top: 150px;
-    padding-bottom: 300px;
-
+.sub_page_kv {
+  background-image: url(../image/about/about_key_back.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 100%;
+  background-size: 40%;
+  margin-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 /* ********************* */
 /* ABOUT共通 */
 /* ********************* */
 
-.sec_about{
-    max-width: 80%;
-    margin: 0 auto;
+.sec_about {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.about_section_title{
-    display: block;
-    padding-top:112px;
+.about_section_title {
+  display: block;
+  padding-top: 112px;
+  position: relative;
 }
 
-.about_section_title h4{
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 3px;
-    color: #333;
+.about_section_title h4 {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: #333;
 }
 
-.about_section_title p{
-    position: relative;
-    top: -105px;
-    z-index: -1;
-    font-family: 'Oxygen', cursive;
-    color: rgb(38, 75, 141, 0.1);
-    font-size: 120px;
-    letter-spacing: 2px;
-    font-weight: 700;
+.about_section_title p {
+  position: relative;
+  top: -105px;
+  z-index: -1;
+  font-family: "Oxygen", cursive;
+  color: rgb(38, 75, 141, 0.1);
+  font-size: 120px;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 /* ********************* */
 /* メッセージ */
 /* ********************* */
 
-.message_item_container{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+.message_item_container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .message_item_container {
+    width: 100%;
+  }
 }
 
-.message_item_container > p{
-    margin-left: 15%;
-    width: 60%;
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 2px;
-    color: #333;
+.message_item_container > p {
+  margin-left: 15%;
+  width: 60%;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  color: #333;
+}
+
+@media (max-width: 900px) {
+  .message_item_container > p {
+    margin-left: auto;
+    width: 85%;
+  }
 }
 
 /* ********************* */
 /* 企業理念 */
 /* ********************* */
 
-.identity_item_container{
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
+.identity_item_container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .identity_item_container {
+    width: 100%;
+    margin-top: -80px;
+    flex-wrap: wrap-reverse;
+  }
 }
 
-.identity_item_container > p{
-    margin-right: 15%;
-    width: 60%;
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 16px;
-    line-height: 27px;
-    letter-spacing: 2px;
-    color: #333;
+.identity_item_container > p {
+  margin-right: 15%;
+  width: 60%;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 2px;
+  color: #333;
+}
+@media (max-width: 900px) {
+  .identity_item_container > p {
+    margin-right: 0;
+  }
 }
 
 /* ********************* */
 /* 会社概要 */
 /* ********************* */
 
-.section_profile{
-    margin: 60px 0 120px;
+.section_profile {
+  margin: 60px 0 120px;
 }
 
 .profile_title {
-    text-align: center;
+  text-align: center;
 }
 
-.profile_title p{
-    top: -110px;
+.profile_title p {
+  top: -110px;
 }
 
-.table_company{
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 16px;
-    color: #333;
-    letter-spacing: 2px;
-    font-weight: 300;
-    width: 55%;
-    margin: 0 auto;
+.table_company {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: 300;
+  width: 55%;
+  margin: 0 auto;
 }
 
 .table_company > tbody > tr:first-child {
-    border-top: 1px solid #c4c3c3;
+  border-top: 1px solid #c4c3c3;
 }
 
-tr{
-    border-bottom: 1px solid #c4c3c3;
-    display: block;
-    padding: 45px 0;
-    
+tr {
+  border-bottom: 1px solid #c4c3c3;
+  display: block;
+  padding: 45px 0;
 }
 
-th{
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-weight: 300;
-    width: 240px;
-    padding-left: 21px;
-    vertical-align: middle;
+th {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-weight: 300;
+  width: 240px;
+  padding-left: 21px;
+  vertical-align: middle;
 }
 
-td{
-    line-height: 21px;
+td {
+  line-height: 21px;
 }
 
 /* ********************* */
@@ -149,60 +173,93 @@ td{
 /* 横幅900px以下の場合の挙動 */
 /* ********************* */
 @media (max-width: 900px) {
+  .sub_page_kv {
+    background-size: 90%;
+  }
 
-    .sub_page_kv{
-        background-size: 90%;
-    }
-    
-    .sec_about{
-        max-width: 90%;
-    }
+  .sec_about {
+    max-width: 90%;
+    text-align: center;
+  }
 
-    .message_item_container{
-        display: block;
-        margin: 0;
-    }
+  .message_item_container {
+    display: block;
+    margin: 0;
+  }
 
-    .message_item_container > img{
-        padding-left: 54px;
-        margin: 0 auto;
+  .message_item_container > img {
+    padding-left: 54px;
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) {
+    .message_item_container > img {
+      width: 50%;
+      padding-left: 0;
     }
+  }
 
-    .about_section_title p{
-        font-size: 54px;
-    }
+  .about_section_title p {
+    font-size: 54px;
+  }
 
-    .message_item_container > p{
-        width: 100%;
-        margin-left: 10%;
-        padding-top: 21px;
-    }
+  .message_item_container > p {
+    text-align: left;
+    width: 100%;
+    margin-left: 10%;
+    padding-top: 21px;
+  }
 
-    .identity_item_container{
-        display: block;
-        margin: 0;
+  @media (max-width: 900px) {
+    .message_item_container > p {
+      width: 100%;
+      margin-left: auto;
     }
+  }
 
-    .identity_item_container > p{
-        width: 100%;
-        margin-left: 10%;
-        padding-bottom: 30px;
-    }
+  .identity_item_container {
+    /* display: block; */
+    margin: 0;
+    margin-top: -80px;
+  }
 
-    .identity_item_container > img{
-        padding-left: 42px;
-        margin: 0 auto;
+  .identity_item_container > p {
+    width: 100%;
+    margin-left: 10%;
+    padding-bottom: 30px;
+  }
+  @media (max-width: 900px) {
+    .identity_item_container > p {
+      margin-left: auto;
+      text-align: left;
     }
+  }
 
-    .table_company{
-        width: 90%;
-    }
+  .identity_item_container > img {
+    padding-left: 42px;
+    margin: 0 auto;
+  }
+  @media (max-width: 900px) {
+  .identity_item_container > img {
+      padding-left: 0;
+      width: 50%;
+      margin-bottom: 20px;
+  }
+}
 
-    th{
-        width: 110px;
+  .table_company {
+    width: 90%;
+  }
+  @media (max-width: 900px) {
+    .table_company {
+      margin-top: -80px;
     }
+  }
 
-    tr{
-        padding: 21px 0;
-    }
+  th {
+    width: 110px;
+  }
+
+  tr {
+    padding: 21px 0;
+  }
 }

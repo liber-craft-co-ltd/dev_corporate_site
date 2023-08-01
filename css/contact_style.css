@@ -80,6 +80,14 @@
     
 }
 
+@media (max-width: 900px) {
+.contact_confilm {
+    width: 85%;
+}
+
+}
+
+
 .privacy_policy{
     font-size: 15px;
     letter-spacing: 2px;
@@ -105,11 +113,21 @@
     background-color: #333;
     letter-spacing: 2px;
     color: #fff;
-    padding: 7px 15px;
+    padding: 15px 15px;
     border-radius: 2px;
     font-size: 15px;
+    width: 100%;
+    max-width: 500px;
 
 }
+
+@media (max-width: 900px) {
+.btnSubmit {
+    margin-top: 0px;
+}
+
+}
+
 
 
 .btnSubmit:hover{
@@ -129,6 +147,16 @@
     line-height: 30px;
 }
 
+@media (max-width: 900px) {
+    .sec_after_sending
+    {
+        width: 85%;
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+}
+
 /* ********************* */
 /* レスポンシブ対応 */
 /* 横幅900px以下の場合の挙動 */
@@ -144,7 +172,7 @@
 
     .contact_content_item{
         display: block;
-        width: 80%;
+        width: 85%;
     }
 
     .contact_content_heading{
@@ -152,11 +180,13 @@
     }
 
     .contact_input{
-        width: 90%;
+        width: 100%;
+        padding: 15px;
     }
 
     .contact_textarea{
-        width: 90%;
+        width: 100%;
+        padding: 15px;
     }
 
     .privacy_policy{

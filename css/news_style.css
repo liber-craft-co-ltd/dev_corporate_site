@@ -31,11 +31,20 @@
     margin-top: 90px;
 }
 
+@media (max-width: 900px) {
+.sec_news_main{
+    margin-top: 50px;
+}
+
+}
+
 #news_all{
     width: 60%;
     margin: 0 auto;
     border-top: 1px solid #333;
 }
+
+
 
 .list_top_news{
     display: flex;
@@ -154,7 +163,7 @@
 @media (max-width: 900px) {
     .list_top_news{
         display: block;
-        padding: 12px 9px;
+        padding: 12px 0px;
     }
 
     .list_top_news > h5{
@@ -164,7 +173,7 @@
     }
 
     #news_all{
-        width: 75%;
+        width: 85%;
     }
 
     .sub_page_kv{

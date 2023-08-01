@@ -434,12 +434,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1025px) {
   .header-container {
     padding: 0;
-    background-color: #fff;
   }
 }
 
@@ -652,6 +652,24 @@ a {
   max-width: 1400px;
   margin: 0 auto;
   width: 90%;
+  margin-bottom: 100px;
+}
+
+.service .table-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.service .table-ttl {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1025px) {
+  .service .table-ttl {
+    font-size: 1.8rem;
+  }
 }
 
 .service .caution {
@@ -740,6 +758,11 @@ a {
   .service .point-lists .strong {
     font-size: 1.1rem;
   }
+}
+
+.service td li {
+  text-indent: -1em;
+  padding-left: 1em;
 }
 
 .service table,
@@ -870,26 +893,26 @@ a {
   border: 2px #dadada solid;
 }
 
-.service thead .advice {
+.service thead .gray {
   background-color: #f8f8f8;
 }
 
-.service thead .standard {
+.service thead .pale-blue {
   background-color: #eef9fb;
 }
 
-.service thead .customize {
+.service thead .deep-blue {
   background-color: #0E538C;
   color: #fff;
 }
 
-.service .row1 .standard,
-.service .row2 .standard {
+.service .row1 .pale-blue,
+.service .row2 .pale-blue {
   color: #43B2CA;
 }
 
-.service .row1 .customize,
-.service .row2 .customize {
+.service .row1 .deep-blue,
+.service .row2 .deep-blue {
   color: #0E538C;
 }
 
@@ -1112,11 +1135,17 @@ a {
 /* =====  key-visual ===== */
 .key-visual {
   position: relative;
-  background-image: url(/image/chatgpt-consulting/background_border.png);
+  background-image: url(../../../image/chatgpt-consulting/background_border.png);
   background-size: cover;
   background-position: top;
   background-color: #EEF9FB;
-  padding-top: 100px;
+  padding-top: 150px;
+}
+
+@media screen and (max-width: 750px) {
+  .key-visual {
+    padding-top: 100px;
+  }
 }
 
 .key-visual_txt {
@@ -1230,7 +1259,7 @@ a {
   position: relative;
   width: 650px;
   position: absolute;
-  top: 280px;
+  top: 330px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -1239,7 +1268,7 @@ a {
 @media screen and (max-width: 750px) {
   .key-visual__image {
     width: 375px;
-    top: 250px;
+    top: 290px;
   }
 }
 
@@ -1470,7 +1499,7 @@ a {
 
 /* =====  cv ===== */
 .cv {
-  background-image: url(/image/chatgpt-consulting/cv-background.png);
+  background-image: url(../../../image/chatgpt-consulting/cv-background.png);
   background-size: cover;
   background-position: top;
   background-color: #43B2CA;
@@ -1763,7 +1792,7 @@ a {
   margin: 0 auto;
   margin-top: 100px;
   color: #fff;
-  background-image: url(/image/chatgpt-consulting/background.png);
+  background-image: url(../../../image/chatgpt-consulting/background.png);
   background-size: cover;
   background-position: top right;
   background-color: #EEF9FB;
@@ -1779,7 +1808,7 @@ a {
 @media screen and (max-width: 750px) {
   .what-is-it-conclusion__wrap {
     margin-top: 0;
-    background-image: url(/image/chatgpt-consulting/background_sp.png);
+    background-image: url(../../../image/chatgpt-consulting/background_sp.png);
     padding: 30px 20px 50px;
   }
 }

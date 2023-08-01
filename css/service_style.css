@@ -1,293 +1,329 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap");
 
-.nav_service > a{
-    border-bottom: solid 1px #264b8d;
+.nav_service > a {
+  border-bottom: solid 1px #264b8d;
 }
 
 /* ********************* */
 /* サブキービジュアル */
 /* ********************* */
-.sub_page_kv{
-    background-image: url(../image/service/service_key_back_1.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 70%;
-    background-position-y: 50% ;
-    background-size: 40%;
-    margin-top: 150px;
-    padding-bottom: 300px;
+.sub_page_kv {
+  background-image: url(../image/service/service_key_back_1.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 50%;
+  background-size: 40%;
+  margin-top: 150px;
+  padding-bottom: 300px;
 }
 
-.sub_page_kv_corpo{
-    background-image: url(../image/service/service_key_back_2.jpg);
-    background-repeat: no-repeat;
-    background-position-x: 70%;
-    background-position-y: 50% ;
-    background-size: 40%;
-    margin-top: 150px;
-    padding-bottom: 300px;
+.sub_page_kv_corpo {
+  background-image: url(../image/service/service_key_back_2.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: 0%;
+  background-size: 40%;
+  margin-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 100px;
 }
+@media (max-width: 900px) {
+  .sub_page_kv_corpo {
+    margin-top: 80px;
+    margin-bottom: 80px;
+      background-position-y: 100%;
+  }
+}
+
 /* ********************* */
 /* FLOW */
 /* ********************* */
 
-.section_title h3{
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 19px;
-    color: #333;
-    line-height: 24px;
-    vertical-align: middle;
-    letter-spacing: 2px;
-    margin-left: 12px;
-    margin-top: 2px;
+.section_title h3 {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 19px;
+  color: #333;
+  line-height: 24px;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  margin-left: 12px;
+  margin-top: 2px;
 }
 
-.flow_container{
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+.flow_container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.flow_container > p{
-    margin: 72px 0;
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 16px;
-    letter-spacing: 1.5px;
-    color: #333;
+.flow_container > p {
+  margin: 72px 0;
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: #333;
+}
+@media (max-width: 900px) {
+  .flow_container > p {
+    margin: 50px 0;
+  }
 }
 
-.consulting_flow_container{
-    width: 520px;
-    margin: 0 auto;
+.consulting_flow_container {
+  width: 520px;
+  margin: 0 auto;
 }
 
-.consulting_flow_item{
-    display: flex;
-    margin: 0 auto;
-    border: solid 1px #264b8d;
-    width: 80%;  
+.consulting_flow_item {
+  display: flex;
+  margin: 0 auto;
+  border: solid 1px #264b8d;
+  width: 80%;
 }
 
-.flow_line{
-    position: relative;
-    top: 0;
-    left: 90px;
-    width: 1px;
-    height: 30px;
-    margin: 0;
-    background-color: #264b8d;
+.flow_line {
+  position: relative;
+  top: 0;
+  left: 90px;
+  width: 1px;
+  height: 30px;
+  margin: 0;
+  background-color: #264b8d;
 }
 
-.flow_number{
-    font-family: 'Oxygen', cursive;
-    color: #fff;
-    background-color: #264b8d;
-    font-size: 15px;
-    padding: 24px;
+.flow_number {
+  font-family: "Oxygen", cursive;
+  color: #fff;
+  background-color: #264b8d;
+  font-size: 15px;
+  padding: 24px;
 }
 
-.flow_contents{
-    font-family: 'Noto Sans Japanese', sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-    color: #264b8d;
-    background-color: #fff;
-    margin-left:21px ;
-    padding: 24px;
+.flow_contents {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #264b8d;
+  background-color: #fff;
+  margin-left: 21px;
+  padding: 24px;
 }
 
-.flow_titile{
-    font-family: 'Noto Sans Japanese', sans-serif;
-    font-size: 120px;
-    letter-spacing: 1px;
-    color: #eff1f5;
-    transform: rotate(-90deg);
-    position: relative;
-    left: 57%;
-    top: -224px;
+.flow_titile {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 120px;
+  letter-spacing: 1px;
+  color: #eff1f5;
+  transform: rotate(-90deg);
+  position: relative;
+  left: 57%;
+  top: -224px;
 }
 
 /* ********************* */
 /* 事例ピックアップ */
 /* ********************* */
 
-.section_casePickUp{
-    margin-bottom: 120px;
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    letter-spacing: 1px;
+.section_casePickUp {
+  margin-bottom: 120px;
+  font-family: "Noto Sans Japanese", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .section_casePickUp {
+    margin-bottom: 80px;
+  }
+}
+
+.casePick_container {
+  padding: 60px 0;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+}
+@media (max-width: 900px) {
+.casePick_container {
+    padding-bottom: 0;
+}
 
 }
 
-.casePick_container{
-    padding: 60px 0 ;
-    width: 90%;
-    margin: 0 auto;
-    background-color: #f8f8f8;
+
+.casePick_container > p {
+  margin-bottom: 60px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: #333;
+  text-align: center;
 }
 
-.casePick_container > p{
-    margin-bottom: 60px;
-    font-size: 17px;
-    letter-spacing: 1px;
-    color: #333;
-    text-align: center;
+.tab_container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.tab_container{
-    width: 80%;
-    margin: 0 auto;
+@media (max-width: 900px) {
+  .tab_container {
+    width: 100%;
+  }
 }
 
 /* ********************* */
 /* 事例Pick コンサル受託開発 */
 /* ********************* */
 /* 事例ピックアップのタブ切り替え ---start */
-.tab-group{
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-  }
+.tab-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
 
-  .tab{
-    flex-grow: 1;
-    padding:5px;
-    border:solid 1px #CCC;
-    text-align:center;
-    background-color: rgba(38, 75, 141, 0.4);
-    color: #fff;
-    padding: 18px 0;
-    cursor:pointer;
-  }
+.tab {
+  flex-grow: 1;
+  padding: 5px;
+  border: solid 1px #ccc;
+  text-align: center;
+  background-color: rgba(38, 75, 141, 0.4);
+  color: #fff;
+  padding: 18px 0;
+  cursor: pointer;
+}
 
-  .tab.is-active{
-    background:#264b8d;
-    color:#FFF;
-    transition: all 0.2s ease-out;
-  }
+.tab.is-active {
+  background: #264b8d;
+  color: #fff;
+  transition: all 0.2s ease-out;
+}
 
-  .panel-group{
-    border-top:none;
-    background:#fff;
-  }
+.panel-group {
+  border-top: none;
+  background: #fff;
+}
 
-  .panel{
-    display:none;
-  }
+.panel {
+  display: none;
+}
 
-  .panel.is-show{
-    display:block;
-  }
+.panel.is-show {
+  display: block;
+}
 /* 事例ピックアップのタブ切り替え ---end */
 
-.panel > p{
-    font-size: 16px;
-    color: #333;
-    line-height: 24px;
-    width: 60%;
-    margin: 0 auto;
-    padding: 80px 0 20px;
-    letter-spacing: 1.8px;
+.panel > p {
+  font-size: 16px;
+  color: #333;
+  line-height: 24px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 80px 0 20px;
+  letter-spacing: 1.8px;
 }
 
-.content_area_container{
-    padding-top:40px ;
-    padding-bottom: 18px;
+@media (max-width: 900px) {
+  .panel > p {
+    padding-top: 30px;
+  }
 }
 
-.content_area{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.content_area_container {
+  padding-top: 40px;
+  padding-bottom: 18px;
 }
 
-.content_line{
-    border-bottom: 1px solid #e8e8e8;
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 54px;
+.content_area {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.content_text_area{
-    width: 50%;    
-    margin-right: 30px;
+.content_line {
+  border-bottom: 1px solid #e8e8e8;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
-.txt_title{
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-    letter-spacing: 3px;
-    text-align: left;
-    display: inline-block;
-    margin-top: 24px;
+.content_text_area {
+  width: 50%;
+  margin-right: 30px;
 }
 
-.txt_main{
-    font-size: 15px;
-    color: #333;
-    margin-top: 30px;
-    text-align: left;
-    line-height: 27px;
-    letter-spacing: 1.5px;
-    display: inline-block;
+.txt_title {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: left;
+  display: inline-block;
+}
+
+.txt_main {
+  font-size: 15px;
+  color: #333;
+  margin-top: 30px;
+  text-align: left;
+  line-height: 27px;
+  letter-spacing: 1.5px;
+  display: inline-block;
 }
 
 /* ********************* */
 /* 事例Pick 法人向けトレーニング */
 /* ********************* */
-  .tab_corpo{
-    flex-grow: 1;
-    padding:5px;
-    border:solid 1px #CCC;
-    text-align:center;
-    background-color: rgba(48, 163, 219, 0.8);
-    color: #fff;
-    padding: 18px 0;
-    cursor:pointer;
-  }
-
-  .content_corpo_text_area{
-    width: 50%;    
-    margin-left: 42px;
+.tab_corpo {
+  flex-grow: 1;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(48, 163, 219, 0.8);
+  color: #fff;
+  padding: 18px 0;
+  cursor: pointer;
 }
 
-.books_area{
-    display: flex;
-    margin-top: 27px;
-    margin-left: 24px;
+.content_corpo_text_area {
+  width: 50%;
+  margin-left: 42px;
 }
 
-.title_reference{
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 24px;
-    letter-spacing: 1px;
-    color: #333;
+.books_area {
+  display: flex;
+  margin-top: 27px;
+  margin-left: 24px;
 }
 
-.book_title{
-    font-family: 'Noto Sans Japanese', sans-serif; 
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 1px;
-    color: #333;
+.title_reference {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #333;
 }
 
-.img_Btnamazon{
-    display: block;
-    margin-top: 36px;
+.book_title {
+  font-family: "Noto Sans Japanese", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #333;
 }
 
-.img_excelData_book{
-    margin-left: 48px;
+.img_Btnamazon {
+  display: block;
+  margin-top: 36px;
 }
 
-.content_corpo > img{
-    margin-top: 54px;
+.img_excelData_book {
+  margin-left: 48px;
+}
+
+.content_corpo > img {
+  margin-top: 54px;
 }
 
 /* ********************* */
@@ -295,121 +331,162 @@
 /* 横幅900px以下の場合の挙動 */
 /* ********************* */
 @media (max-width: 900px) {
-
-    .sub_page_kv {
-        background-size: 90%;  
-    }
-
-    .sub_kv_container > h3{
-        font-size: 90px;
-    }
-
-    .sub_page_kv_corpo{
+  .sub_page_kv {
     background-size: 90%;
-    }
+  }
 
-    .flow_line {
-        position: relative;
-        top: 0;
-        left: 31px;
-        width: 1px;
-        height: 30px;
-        margin: 0;
-        background-color: #264b8d;
-    }
+  .sub_kv_container > h3 {
+    font-size: 90px;
+  }
 
-    .consulting_flow_container{
-        width: 320px;
-    }
+  .sub_page_kv_corpo {
+    background-size: 90%;
+  }
 
-    .flow_number{
-        font-size:12px ;
-        padding: 18px;
-    }
+  .flow_line {
+    position: relative;
+    top: 0;
+    left: 31px;
+    width: 1px;
+    height: 30px;
+    margin: 0;
+    background-color: #264b8d;
+  }
 
-    .flow_contents{
-        font-size:12px;
-        padding: 18px;
-    }
+  .consulting_flow_container {
+    width: 320px;
+  }
 
-    .flow_titile{
-        transform: rotate(0deg);
-        position: relative;
-        left: -15%;
-        top: 6px;
-        font-size: 60px;
-    }
+  .flow_number {
+    font-size: 12px;
+    padding: 18px;
+  }
 
-    .consulting_flow_item{
-        margin: 0;
-    }
+  .flow_contents {
+    font-size: 12px;
+    padding: 18px;
+  }
 
-    .tab-group{
-        font-size: 11px;
-    }
+  .flow_titile {
+    transform: rotate(0deg);
+    position: relative;
+    left: -15%;
+    top: 6px;
+    font-size: 60px;
+  }
 
-    .panel > p{
-        width: 80%;
-    }
+  .consulting_flow_item {
+    width: 100%;
+    margin: 0;
+  }
 
-    .flow_container{
-        width: 70%;
-    }
+  .tab-group {
+    font-size: 11px;
+  }
 
-    .content_area{
-        display: block;
-        width: 85%;
-    }
+  .panel > p {
+    width: 80%;
+  }
 
-    .content_area > img{
-        width: 210px;
-        margin: 0 auto;
+  @media (max-width: 900px) {
+    .panel > p {
+      width: 100%;
     }
+  }
 
-    .content_text_area{
-        width: 100%;
-        margin: 0 auto;
-        margin-top:18px;
-    }
+  .flow_container {
+    width: 85%;
+    text-align: left;
+  }
 
-    .content_line{
-        width: 80%;
-    }
+  .content_area {
+    display: block;
+    width: 85%;
+  }
 
-    .content_corpo_text_area{
-        width: 90%;
-        margin: 0 auto;
-        margin-right: 0px;       
+  @media (max-width: 900px) {
+    .content_area {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
     }
+  }
 
-    .books_area{
-        margin-left:0px;
-    }
+  .content_area > img {
+    width: 210px;
+    margin: 0 auto;
+  }
 
-    .img_excelData_book{
-        margin-left:0px;
-    }
+  .content_text_area {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
 
-    .book_detail{
-        margin-right: 9px;
-    }
+  .content_line {
+    width: 80%;
+  }
 
-    .book_title{
-        font-size: 11px;
+  @media (max-width: 900px) {
+    .content_line {
+      width: 90%;
     }
+  }
 
-    .img_Btnamazon{
-        margin-top:21px;
-    }
+  .content_corpo_text_area {
+    width: 90%;
+    margin: 0 auto;
+    margin-right: 0px;
+  }
 
-    .img_excelData_book > img{
-        width: 66px;
+  @media (max-width: 900px) {
+    .content_corpo_text_area {
+      width: 100%;
+      margin-right: auto;
     }
+  }
 
-    .content_corpo > img{
-        width: 250px;
-        height: auto;
-        margin-top: 21px;
-        margin-left: 18px;
-    }
+  .books_area {
+    margin-left: 0px;
+    justify-content: center;
+  }
+
+  .img_excelData_book {
+    margin-left: 0px;
+  }
+
+  .book_detail {
+    margin-right: 9px;
+    text-align: left;
+  }
+
+  .book_title {
+    font-size: 11px;
+  }
+
+  .img_Btnamazon {
+    margin-top: 21px;
+  }
+
+  .img_excelData_book > img {
+    width: 66px;
+  }
+
+  .content_corpo > img {
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 21px;
+  }
+}
+
+.btn--with-arrow {
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .btn--with-arrow {
+    margin-top: 15px;
+  }
 }

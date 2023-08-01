@@ -323,9 +323,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fff;
     @include media-tab {
       padding: 0;
-      background-color: #fff;
+      
     }
     @include media-sp {
       height: 65px;
@@ -482,6 +483,19 @@ a {
     max-width: 1400px;
     margin: 0 auto;
     width: 90%;
+    margin-bottom: 100px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .table-ttl {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include media-tab {
+      font-size: 1.8rem;
+    }
   }
 
   .caution {
@@ -543,6 +557,11 @@ a {
         font-size: 1.1rem;
       }
     }
+  }
+
+  td li {
+    text-indent: -1em;
+    padding-left: 1em;
   }
 
   table,
@@ -638,23 +657,23 @@ a {
   }
 
   thead {
-    .advice {
+    .gray {
       background-color: #f8f8f8;
     }
-    .standard {
+    .pale-blue {
       background-color: #eef9fb;
     }
-    .customize {
+    .deep-blue {
       background-color: $ai-deep-blue;
       color: $white;
     }
   }
   .row1,
   .row2 {
-    .standard {
+    .pale-blue {
       color: $ai-blue;
     }
-    .customize {
+    .deep-blue {
       color: $ai-deep-blue;
     }
   }
@@ -811,11 +830,15 @@ a {
 /* =====  key-visual ===== */
 .key-visual {
   position: relative;
-  background-image: url(/image/chatgpt-consulting/background_border.png);
+  // background-image: url(https://dotsign.me/test/image/chatgpt-consulting/background_border.png);
+  background-image: url(../../../image/chatgpt-consulting/background_border.png);
   background-size: cover;
   background-position: top;
   background-color: $ai-pale-blue;
-  padding-top: 100px;
+  padding-top: 150px;
+  @include media-sp {
+    padding-top: 100px;
+  }
 
   &_txt {
     text-align: center;
@@ -889,12 +912,12 @@ a {
     position: relative;
     width: 650px;
     position: absolute;
-    top: 280px;
+    top: 330px;
     left: 50%;
     transform: translateX(-50%);
     @include media-sp {
       width: 375px;
-      top: 250px;
+      top: 290px;
     }
     .caution {
       position: absolute;
@@ -1052,7 +1075,8 @@ a {
 
 /* =====  cv ===== */
 .cv {
-  background-image: url(/image/chatgpt-consulting/cv-background.png);
+  // background-image: url(https://dotsign.me/test/image/chatgpt-consulting/cv-background.png);
+  background-image: url(../../../image/chatgpt-consulting/cv-background.png);
   background-size: cover;
   background-position: top;
   background-color: $ai-blue;
@@ -1233,7 +1257,8 @@ a {
       margin-top: 100px;
       color: $white;
       // background-image: url(/image/chatgpt-consulting/background.png);
-      background-image: url(/image/chatgpt-consulting/background.png);
+      // background-image: url(https://dotsign.me/test/image/chatgpt-consulting/background.png);
+      background-image: url(../../../image/chatgpt-consulting/background.png);
       background-size: cover;
       background-position: top right;
       background-color: $ai-pale-blue;
@@ -1244,7 +1269,8 @@ a {
       @include media-sp {
         margin-top: 0;
         // background-image: url(/image/chatgpt-consulting/background_sp.png);
-        background-image: url(/image/chatgpt-consulting/background_sp.png);
+        // background-image: url(https://dotsign.me/test/image/chatgpt-consulting/background_sp.png);
+        background-image: url(../../../image/chatgpt-consulting/background_sp.png);
         padding: 30px 20px 50px;
       }
     }
@@ -1274,9 +1300,9 @@ a {
 .case-study {
   margin-top: 100px;
   background-color: $ai-pale-blue;
-   @include media-tab {
-     margin-top: 0;
-   }
+  @include media-tab {
+    margin-top: 0;
+  }
 
   .check-ttl {
     display: flex;
