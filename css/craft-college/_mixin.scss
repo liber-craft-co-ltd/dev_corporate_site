@@ -1,0 +1,22 @@
+@mixin media-tab {
+  @media screen and (max-width: #{$media-tab}) {
+    @content;
+  }
+}
+@mixin media-tab-s {
+  @media screen and (max-width: #{$media-tab-s}) {
+    @content;
+  }
+}
+
+@mixin media-sp {
+  @media screen and (max-width: #{$media-sp}) {
+    @content;
+  }
+}
+
+@mixin media-sp-s {
+  @media screen and (max-width: #{$media-sp-s}) {
+    @content;
+  }
+}
