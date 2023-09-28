@@ -4407,17 +4407,19 @@ main {
   padding-bottom: 0;
 }
 
-.voices.blue__container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .voices.blue .wrap {
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   scroll-snap-align: start;
   white-space: nowrap;
-  overflow-x: auto;
   margin: 0 auto;
   padding: 0 30px 40px;
 }
@@ -4430,6 +4432,8 @@ main {
 }
 
 .voices.blue .item {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: inline-block;
   margin: 0 20px;
   width: 70%;
@@ -4438,21 +4442,14 @@ main {
   max-width: 750px;
   -webkit-box-shadow: 0px 0px 30px rgba(15, 107, 56, 0.07);
           box-shadow: 0px 0px 30px rgba(15, 107, 56, 0.07);
-  height: 600px;
+  height: auto;
   border: 3px solid #062E75;
-}
-
-@media screen and (max-width: 769px) {
-  .voices.blue .item {
-    height: 700px;
-  }
 }
 
 @media screen and (max-width: 750px) {
   .voices.blue .item {
     width: 90%;
     margin: 0 5px;
-    height: 800px;
   }
 }
 

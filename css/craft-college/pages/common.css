@@ -1932,12 +1932,12 @@ a {
 }
 
 /* =====  voices ===== */
-.voices__container {
+.voices.green__container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.voices .wrap {
+.voices.green .wrap {
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   scroll-snap-align: start;
@@ -1948,13 +1948,13 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-  .voices .wrap {
+  .voices.green .wrap {
     width: 100%;
     padding: 0 15px 30px;
   }
 }
 
-.voices .item {
+.voices.green .item {
   display: inline-block;
   margin: 0 20px;
   width: 70%;
@@ -1967,14 +1967,14 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item {
+  .voices.green .item {
     width: 90%;
     margin: 0 5px;
     height: 580px;
   }
 }
 
-.voices .item__ttl {
+.voices.green .item__ttl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1988,13 +1988,13 @@ a {
 }
 
 @media screen and (max-width: 1025px) {
-  .voices .item__ttl {
+  .voices.green .item__ttl {
     padding: 35px 50px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item__ttl {
+  .voices.green .item__ttl {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2003,72 +2003,72 @@ a {
   }
 }
 
-.voices .item .img {
+.voices.green .item .img {
   margin-right: 30px;
 }
 
 @media screen and (max-width: 1025px) {
-  .voices .item .img {
+  .voices.green .item .img {
     width: 180px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item .img {
+  .voices.green .item .img {
     width: 110px;
     margin-right: 0;
     margin-bottom: 15px;
   }
 }
 
-.voices .item .txt {
+.voices.green .item .txt {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item .txt {
+  .voices.green .item .txt {
     font-size: 1.8rem;
   }
 }
 
-.voices .item .info {
+.voices.green .item .info {
   font-size: 1.4rem;
   display: inline-block;
   color: #8c8c8c;
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item .info {
+  .voices.green .item .info {
     font-size: 1rem;
   }
 }
 
-.voices .item .bold {
+.voices.green .item .bold {
   font-size: 1.6rem;
   margin-bottom: 10px;
   margin-right: 15px;
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item .bold {
+  .voices.green .item .bold {
     font-size: 1.2rem;
   }
 }
 
-.voices .item__massage {
+.voices.green .item__massage {
   padding: 30px 80px;
 }
 
 @media screen and (max-width: 1025px) {
-  .voices .item__massage {
+  .voices.green .item__massage {
     padding: 30px 50px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .voices .item__massage {
+  .voices.green .item__massage {
     padding: 20px 30px;
   }
 }
