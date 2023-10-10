@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社リベルクラフト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Oxanium:wght@300&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="./image/common/favicon.ico">
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/main_style.css">
-    <link rel="stylesheet" href="css/news_style.css">
+    <link rel="stylesheet" href="css/pages/sub-common.css" />
+<link rel="stylesheet" href="css/pages/styles_main.css">
 </head>
-<body>
+<body class="news-lists">
     <header class="header_top">
         <div class="header_wap">
             <div class="LC_logo">
                 <a href="/">
-                    <img src="./image/common/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
+                    <img src="../image/common/libercraft_yoko.png" alt="logo" width="160px" height="auto"> 
                 </a>
             </div>
             <!-- メニューITEM -->
             <ul class="nav_item menu">
-                <li class="nav_item_line nav_top">
+                <li class="nav_item_line">
                     <a href="/">TOP</a>
                 </li>
                 <li class="nav_item_line nav_service menu_appear_submenu">
@@ -32,10 +35,10 @@
                         <li><a href="/business/training/">法人向けトレーニング</a></li>
                     </ul>
                 </li>
-                <li class="nav_item_line nav_newsblog">
+                <li class="nav_item_line active">
                     <a href="/news.html">NEWS</a>
                 </li>
-                <li class="nav_item_line nav_about">
+                <li class="nav_item_line">
                     <a href="/about.html">ABOUT US</a>
                 </li>
                 <li class="nav_contact">
@@ -48,7 +51,7 @@
         <div class="sp-menu">
             <div class="topLogo">
                 <a href="/">
-                <img src="./image/common/Libercraft_yoko_S.png" alt="" width="50px">
+                <img src="../image/common/libercraft_yoko.png" alt="" width="50px">
                 </a>
             </div>
             <span class="material-icons" id="open">menu</span>
@@ -69,14 +72,14 @@
                     <li><a href="/business/training">法人向けトレーニング</a></li>
                 </ul>
             </li>
-            <li><a href="/news">NEWS</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/news.html">NEWS</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </div>
-    
-    <section class="sub_page_kv">
+
+    <section class="sub_page_kv news-kv">
         <div class="sub_kv_container">
             <h3>
                 NEWS
@@ -85,32 +88,40 @@
         </div>
     </section>
 
-    <section class="news_container">
-        <span class="section_title">
-            <img src="./image/common/secTitleMark.png" alt="" width="39px" height="auto">
-            <h3>NEWS一覧</h3>
-        </span>
-
-        <!-- Newsの一覧をJavascriptで描画 -->
-        <div class="sec_news_main">
+    <section class="news">
+        <div class="container wide">
+            <div class="section-ttl">
+                <div class="section-ttl__main">
+                    <img src="./image/common/sec-ttl-mark.png" alt="" class="icon">
+                    <h3 >NEWS一覧</h3>
+                </div>
+            </div>
             <ul id="news_all"></ul>
         </div>
     </section>
 
-    <div class="contact_container">
-        <a href="/contact">
+     <section class="contact">
+        <a href="/contact.html">
             <div class="contact_btn">
-                <img src="./image/common/btnContact.png" alt="">
+                <div class="contact_btn__img">
+                     <img src="./image/common/btn_contact.png" alt="">
+                </div>
                 <p>CONTACT</p>
             </div>
         </a>
-    </div>
+    </section>
 
-    <footer class="footer">
-        <div class="footer_inner">
-            <p>© 2021 LiberCraft</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__links-lists">
+        <li class="lists-item"><a href="/terms-of-use.html" class="hover">利用規約</a></li>
+        <li class="lists-item"><a href="/commercial-transactions.html" class="hover">特定商取引法に基づく表記</a></li>
+        <li class="lists-item"><a href="/privacy-policy.html" class="hover">プライバシーポリシー</a></li>
+        <li class="lists-item"><a href="https://liber-craft.co.jp/contact" target="__blank" rel="noopener noreferrer" class="hover">お問合せ</a></li>
+      </ul>
+    </div>
+    <p class="copy">© LiberCraft Co.,Ltd All rights Reserved</p>
+  </footer>
 
     <script src="./js/cms/news_common.js"></script>
     <script src="./js/cms/news_all.js"></script>

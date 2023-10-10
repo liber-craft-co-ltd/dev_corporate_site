@@ -1,199 +1,254 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>株式会社リベルクラフト</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="../../image/common/favicon.ico">
-    <link rel="stylesheet" href="../../css/destyle.css">
-    <link rel="stylesheet" href="../../css/main_style.css">
-    <link rel="stylesheet" href="../../css/service_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Oxanium:wght@300&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../../image/common/favicon.ico" />
+    <link rel="stylesheet" href="../../css/destyle.css" />
+    <link rel="stylesheet" href="../../css/pages/sub-common.css" />
+    <link rel="stylesheet" href="../../css/pages/styles_main.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/pages/styles_business.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header_top">
-        <div class="header_wap">
-            <div class="LC_logo">
-                <a href="/">
-                    <img src="../../image/common/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
-                </a>
-            </div>
-            <!-- メニューITEM -->
-            <ul class="nav_item menu">
-                <li class="nav_item_line nav_top">
-                    <a href="/">TOP</a>
-                </li>
-                <li class="nav_item_line nav_service menu_appear_submenu">
-                    <a tabindex="-1">SERVICE</a>
-                    <ul class="menu_second_level">
-                        <li><a href="/school/craft-college">スクール事業（クラフトカレッジ）</a></li>
-                        <li><a href="/business/consulting">コンサルティング受託開発支援</a></li>
-                        <li><a href="/business/training">法人向けトレーニング</a></li>
-                    </ul>
-                </li>
-                <li class="nav_item_line nav_newsblog">
-                    <a href="/news">NEWS</a>
-                </li>
-                <li class="nav_item_line nav_about">
-                    <a href="/about">ABOUT US</a>
-                </li>
-                <li class="nav_contact">
-                    <a href="/contact">CONTACT</a>
-                </li>
+      <div class="header_wap">
+        <div class="LC_logo">
+          <a href="/">
+            <img
+              src="../../image/common/libercraft_yoko.png"
+              alt="logo"
+              width="160px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <!-- メニューITEM -->
+        <ul class="nav_item menu">
+          <li class="nav_item_line">
+            <a href="/">TOP</a>
+          </li>
+          <li class="nav_item_line nav_service menu_appear_submenu active">
+            <a tabindex="-1">SERVICE</a>
+            <ul class="menu_second_level">
+              <li>
+                <a href="/school/craft-college"
+                  >スクール事業（クラフトカレッジ）</a
+                >
+              </li>
+              <li>
+                <a href="/business/consulting">コンサルティング受託開発支援</a>
+              </li>
+              <li><a href="/business/training">法人向けトレーニング</a></li>
             </ul>
-        </div>
+          </li>
+          <li class="nav_item_line">
+            <a href="/news.html">NEWS</a>
+          </li>
+          <li class="nav_item_line">
+            <a href="/about.html">ABOUT US</a>
+          </li>
+          <li class="nav_contact">
+            <a href="/contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
 
-        <!-- SP icon -->
-        <div class="sp-menu">
-            <div class="topLogo">
-                <a href="/">
-                <img src="../../image/common/Libercraft_yoko_S.png" alt="" width="50px">
-                </a>
-            </div>
-            <span class="material-icons" id="open">menu</span>
+      <!-- SP icon -->
+      <div class="sp-menu">
+        <div class="topLogo">
+          <a href="/">
+            <img
+              src="../../image/common/libercraft_yoko.png"
+              alt=""
+              width="50px"
+            />
+          </a>
         </div>
+        <span class="material-icons" id="open">menu</span>
+      </div>
     </header>
 
     <!-- SP menu -->
     <div class="overlay">
-        <span class="material-icons" id="close">close</span>
-        <nav>
-            <ul>
-            <li><a href="/">TOP</a></li>
-            <li><a href=""><label for="acd-check">SERVICE</label></a>
-                <input id="acd-check" class="acd-check" type="checkbox">
-                <ul class="acMenu">
-                    <li><a href="/school/craft-college">スクール事業（クラフトカレッジ）</a></li>
-                    <li><a href="/business/consulting">コンサルティング受託開発支援</a></li>
-                    <li><a href="/business/training">法人向けトレーニング</a></li>
-                </ul>
-            </li>
-            <li><a href="/news">NEWS</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="/">TOP</a></li>
+          <li>
+            <a href=""><label for="acd-check">SERVICE</label></a>
+            <input id="acd-check" class="acd-check" type="checkbox" />
+            <ul class="acMenu">
+              <li>
+                <a href="/school/craft-college"
+                  >スクール事業（クラフトカレッジ）</a
+                >
+              </li>
+              <li>
+                <a href="/business/consulting">コンサルティング受託開発支援</a>
+              </li>
+              <li><a href="/business/training">法人向けトレーニング</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="/news.html">NEWS</a></li>
+          <li><a href="/about.html">ABOUT US</a></li>
+          <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <section class="sub_page_kv_corpo">
-        <div class="sub_kv_container">
-            <h3>
-                SERVICE
-            </h3>
-            <p>法人向けトレーニング</p> 
-        </div>
+
+    <section class="sub_page_kv service">
+      <div class="sub_kv_container">
+        <h3>SERVICE</h3>
+        <p>法人向けトレーニング</p>
+      </div>
     </section>
 
-    <section class="section_casePickUp">
-        <div class="casePick_container">
-            <p>提供コンテンツ例</p>
-
-            <div class="tab_container">
-                <!--タブ-->
-                <ul class="tab-group">
-                    <li class="tab_corpo is-active">データ活用</li>
-                </ul>
-
-                <!--タブを切り替えて表示するコンテンツ-->
-                <div class="panel-group">
-                    <div class="panel is-show">
-                        <p>Excelによるデータ分析やAI・データサイエンスの知識など、データ活用に必要不可欠なスキル獲得のためのトレーニングパッケージをご提供し、企業におけるデータ活用リテラシー向上を支援いたします。
-                        </p>
-                        
-                        <div class="content_area_container">
-                            <!-- contents_4_1 -->
-                            <div class="content_area content_corpo">
-                                <div class="content_corpo_text_area">
-                                    <p class="txt_title">Excelによるデータ分析</p>
-                                    <p class="txt_main">＜Excelによるデータ分析リテラシーをつけたいメンバー層向け＞<br>
-                                        Excelで可能なデータ分析手法（基礎集計・データ可視化・基本的な統計解析…）に関して、実際にビジネスケース・データセットにもとづいて、手を動かしながら理解を深めます。
-                                    </p>
-                                    <div class="books_area">
-                                        <div class="book_detail">
-                                        <p class="title_reference">【参考文献】</p>
-                                        <p class="book_title">統計学の基礎から学ぶ<br>
-                                            Excelデータ分析の全知識</p>
-                                        <a class="img_Btnamazon" href="https://amzn.to/2ZvZTVH" target="_blank" rel="noopener noreferrer"><img src="../../image/service/btn_orange_amazon.png" alt="" width="120px"></a>
-                                        </div>
-                                        <a class="img_excelData_book" href="https://amzn.to/2ZvZTVH" target="_blank" rel="noopener noreferrer"><img src="../../image/service/ExcelData_book.jpg" alt="" width="90px"></a>
-                                    </div>
-                                </div>
-                                <img class="img_corpo_service" src="../../image/service/service_4_1.png" alt="" width="325px" height="192px">
-                            
-                            </div>
-
-                            <div class="content_line"></div>
-
-                            <!-- contents_4_2 -->
-                            <div class="content_area content_corpo">
-                                <div class="content_corpo_text_area">
-                                    <p class="txt_title">AI・データサイエンスの基礎知識</p>
-                                    <p class="txt_main">
-                                        ＜AI・データサイエンスを学びたいリーダー層向け＞<br>
-                                        需要予測やレコメンドなど、ビジネス活用が盛んなAI・データサイエンス技術に関して、ビジネス事例にもとづき、数式などを省きながら理解を深めます。
-                                    </p>
-
-                                    <div class="books_area">
-                                        <div class="book_detail">
-                                        <p class="title_reference">【参考文献】</p>
-                                        <p class="book_title">ビジネスの現場で使える<br>
-                                            AI&データサイエンスの全知識</p>
-                                        <a class="img_Btnamazon" href="https://amzn.to/3KNlP1p" target="_blank" rel="noopener noreferrer"><img src="../../image/service/btn_orange_amazon.png" alt="" width="120px"></a>
-                                        </div>
-                                        <a class="img_excelData_book" href="https://amzn.to/3KNlP1p" target="_blank" rel="noopener noreferrer"><img src="../../image/service/ai_datascience_book.jpg" alt="" width="90px"></a>
-                                    </div>
-
-                                </div>
-                                <img class="img_corpo_service" src="../../image/service/service_4_2.png" alt="" width="325px" height="210px">
-                            </div>
-
-                            <div class="content_line"></div>
-
-                            <!-- contents_4_3 -->
-                            <div class="content_area content_corpo">
-                                <div class="content_corpo_text_area">
-                                    <p class="txt_title">ChatGPT活用スキル育成研修</p>
-                                    <p class="txt_main">＜ChatGPTを業務で活用したい企業様向け＞<br>
-                                        ChatGPTの業務活用方法を、AIの基礎知識からビジネスケースをベースにしたハンズオン演習まで学ぶことにより、様々な業務の効率化や作業の自動化が実現できるようになります。
-                                    </p>
-                                    <div class="is-pc">
-                                        <a href="../training/chatgpt.html" class="btn--with-arrow">view more.. 
-                                        </a>
-                                    </div>
-                                </div>
-                                <img class="img_corpo_service" src="../../image/service/service_4_3.png" alt="" width="325px" height="192px">
-                                                             <div class="is-sp">
-                                        <a href="../training/chatgpt.html" class="btn--with-arrow">view more.. 
-                                        </a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
+    <section class="sub-service">
+      <div class="container wide">
+        <h4 class="sub-service__ttl">提供コンテンツ例</h4>
+        <div class="contents-wrap">
+          <p class="contents-ttl">
+            データ活用
+          </p>
+          <p class="contents-txt">
+            Excelによるデータ分析やAI・データサイエンスの知識など、データ活用に必要不可欠なスキル獲得のためのトレーニングパッケージをご提供し、企業におけるデータ活用リテラシー向上を支援いたします。
+          </p>
+          <ul class="contents-list">
+            <li class="list-item">
+              <div class="list-item__left">
+                <p class="list-item__ttl">
+                  Excelによるデータ分析
+                </p>
+                <p class="list-item__txt">
+                  ＜Excelによるデータ分析リテラシーをつけたいメンバー層向け＞<br />
+                    Excelで可能なデータ分析手法（基礎集計・データ可視化・基本的な統計解析…）に関して、実際にビジネスケース・データセットにもとづいて、手を動かしながら理解を深めます。
+                </p>
+                <div class="book">
+                  <div class="book__left">
+                      <p class="book__left-ttl">
+                        <span class="bold">【参考文献】</span>
+                      統計学の基礎から学ぶ<br />
+                      Excelデータ分析の全知識
+                    </p>
+                    <a class="btn-amazon" href="https://amzn.to/2ZvZTVH" target="_blank" rel="noopener noreferrer">
+                      <img src="../../image/service/btn_orange_amazon.png"alt=""/>
+                    </a>
+                  </div>
+                  <div class="book__right">
+                      <a
+                        class="img_excel-data-book"
+                        href="https://amzn.to/2ZvZTVH"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                          src="../../image/service/excel-data-book.jpg"
+                          alt=""
+                          width="90px"
+                      /></a>
+                  </div>
                 </div>
-            </div>
+              </div>
+              <div class="list-item__right">
+                <div class="right-img">
+                    <img class="img_corpo_service" src="../../image/service/service_4_1.png" alt=""/>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="list-item__left">
+                <p class="list-item__ttl">
+                  AI・データサイエンスの基礎知識
+                </p>
+                <p class="list-item__txt">
+                ＜AI・データサイエンスを学びたいリーダー層向け＞<br>
+                需要予測やレコメンドなど、ビジネス活用が盛んなAI・データサイエンス技術に関して、ビジネス事例にもとづき、数式などを省きながら理解を深めます。
+                </p>
+                <div class="book">
+                  <div class="book__left">
+                      <p class="book__left-ttl">
+                        <span class="bold">【参考文献】</span>
+                        ビジネスの現場で使える<br>
+                        AI&データサイエンスの全知識
+                    </p>
+                    <a class="btn-amazon" href="https://amzn.to/3KNlP1p" target="_blank" rel="noopener noreferrer">
+                      <img src="../../image/service/btn_orange_amazon.png"alt=""/>
+                    </a>
+                  </div>
+                  <div class="book__right">
+                      <a
+                        href="ttps://amzn.to/3KNlP1p"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                          src="../../image/service/ai_datascience_book.jpg"
+                          alt=""
+                      /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="list-item__right">
+                <div class="right-img">
+                    <img class="img_corpo_service" src="../../image/service/service_4_2.png" alt=""/>
+                </div>
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="list-item__left">
+                <p class="list-item__ttl">
+                  ChatGPT活用スキル育成研修
+                </p>
+                <p class="list-item__txt">
+                ＜ChatGPTを業務で活用したい企業様向け＞<br>
+                ChatGPTの業務活用方法を、AIの基礎知識からビジネスケースをベースにしたハンズオン演習まで学ぶことにより、様々な業務の効率化や作業の自動化が実現できるようになります。
+                </p>
+                <a href="../training/chatgpt.html" class="btn--with-arrow is-pc">view more...</a>
+              </div>
+              <div class="list-item__right">
+                <div class="right-img">
+                    <img class="img_corpo_service" src="../../image/service/service_4_3.png" alt=""/>
+                </div>
+                <a href="../training/chatgpt.html" class="btn--with-arrow is-sp">view more...</a>
+              </div>
+            </li>
+          </ul>
         </div>
-
+      </div>
     </section>
 
-    <section class="contact_container">
+    <section class="contact">
         <a href="/contact.html">
-        <div class="contact_btn">
-            <img src="../../image/common/btnContact.png" alt="" >
-            <p>CONTACT</p>
-        </div>
+            <div class="contact_btn">
+                <div class="contact_btn__img">
+                     <img src="../../image/common/btn_contact.png" alt="">
+                </div>
+                <p>CONTACT</p>
+            </div>
         </a>
     </section>
 
-    <footer class="footer">
-        <div class="footer_inner">
-            <p>© 2021 LiberCraft</p>
-        </div>
-    </footer>
+  <footer class="footer blue">
+    <div class="container">
+      <ul class="footer__links-lists">
+        <li class="lists-item"><a href="/terms-of-use.html" class="hover">利用規約</a></li>
+        <li class="lists-item"><a href="/commercial-transactions.html" class="hover">特定商取引法に基づく表記</a></li>
+        <li class="lists-item"><a href="/privacy-policy.html" class="hover">プライバシーポリシー</a></li>
+        <li class="lists-item"><a href="/contact.html" target="__blank" rel="noopener noreferrer" class="hover">お問合せ</a></li>
+      </ul>
+    </div>
+    <p class="copy">© LiberCraft Co.,Ltd All rights Reserved</p>
+  </footer>
 
     <script type="text/javascript" src="../../js/main.js"></script>
     <script src="../../js/nav.js"></script>
-
-</body>
+  </body>
 </html>

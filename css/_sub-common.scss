@@ -1,0 +1,619 @@
+/* =====  共通事項　 ===== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: "palt";
+  font-size: 1.6rem;
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+
+  @include media-sp {
+    font-size: 1.4rem;
+  }
+  font-family: "Oxygen", "Noto Sans JP", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  word-break: break-all;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+.container.wide {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* ブログ */
+.sec_top_blog {
+  display: none;
+}
+/* 記事ができたら開放 ---end */
+.nav_top > a {
+  border-bottom: solid 1px #264b8d;
+}
+
+/* ********************* */
+/* メニュー部分 */
+/* ********************* */
+.header_top {
+  max-width: 1300px;
+}
+
+.LC_logo {
+  margin: 18px 0;
+  width: 160px;
+  /* margin-left: 48px; */
+}
+
+.header_wap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding-left: 48px;
+  padding-right: 48px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.nav_item {
+  display: flex;
+  font-size: 15px;
+  font-family: "Oxygen", sans-serif;
+  cursor: pointer;
+}
+
+.nav_item_line > a {
+  display: block;
+  margin: 30px;
+  padding-bottom: 27px;
+}
+
+.nav_item_line > a:hover {
+  border-bottom: solid 1px #30a3db;
+  color: #30a3db;
+}
+
+.nav_contact > a {
+  display: block;
+  color: #fff;
+  background-color: #264b8d;
+  padding: 27px;
+}
+
+.nav_contact > a:hover {
+  background-color: rgba(48, 163, 219, 1);
+  transition: all 0.1s ease-out;
+}
+
+/* 下層メニューの挙動 */
+.menu_second_level {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.menu_second_level li {
+  border-top: 1px solid #111;
+}
+
+.menu_appear_submenu .menu_second_level {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px 2%;
+  background: rgba(38, 75, 141, 0.9);
+  transition: 0.5s;
+}
+
+.menu_appear_submenu:hover .menu_second_level {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+}
+
+.menu_appear_submenu .menu_second_level > li {
+  margin: 0 auto;
+  border: none;
+  text-align: center;
+  color: #fff;
+}
+
+.menu_second_level > li:hover {
+  color: #30a3db;
+}
+
+/* ********************* */
+/* フッター*/
+/* ********************* */
+/* =====  footer ===== */
+.footer {
+  padding: 20px 0 32px;
+  background-color: #264b8d;
+  padding-top: 50px;
+  color: #fff;
+  &__links-lists {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin-bottom: 100px;
+    @include media-sp {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+      font-size: 1.2rem;
+    }
+    .lists-item {
+      &:hover {
+        transition: 0.4s;
+        opacity: 0.8;
+      }
+      @include media-sp {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .copy {
+    text-align: center;
+    font-size: 1.2rem;
+    @include media-sp {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* レスポンシブメニュー */
+@keyframes fade-in {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.sp-menu {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+
+@include media-tab-s {
+  .sp-menu {
+    display: initial;
+  }
+
+  .nav_item {
+    display: none;
+  }
+
+  .LC_logo {
+    display: none;
+  }
+
+  .topLogo img {
+    margin: 10px 0;
+    width: 100px;
+  }
+
+  .acd-check {
+    display: none;
+  }
+
+  #acd-check:checked + .acMenu {
+    display: block;
+  }
+
+  .acMenu {
+    animation-duration: 0.5s;
+    animation-name: fade-in;
+  }
+
+  .acMenu > li > a {
+    font-size: 15px;
+    color: #333;
+
+    letter-spacing: 1px;
+  }
+
+  .sp-menu {
+    position: absolute;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .sp-menu .topLogo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  // .sp-menu #open {
+  //   position: relative;
+  //   left: 87%;
+  //   font-size: 32px;
+  //   line-height: 64px;
+  //   cursor: pointer;
+  // }
+  .sp-menu #open {
+    position: absolute;
+    // left: auto;
+    right: 20px;
+    font-size: 32px;
+    line-height: 64px;
+    cursor: pointer;
+  }
+
+  .sp-menu #open.hide {
+    display: none;
+  }
+
+  .acMenu {
+    display: none;
+  }
+
+  .overlay {
+    display: initial;
+    position: absolute;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 64px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s;
+  }
+
+  .overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .overlay #close {
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+  }
+
+  .overlay ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlay li {
+    margin-top: 21px;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s;
+    color: #333;
+    letter-spacing: 1px;
+    font-size: 21px;
+    font-family: "Oxygen", cursive;
+  }
+
+  .overlay.show li {
+    opacity: 1;
+    transform: none;
+  }
+
+  .overlay.show li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .overlay.show li:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .overlay.show li:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+}
+
+/* ********************* */
+/* ボタン */
+/* ********************* */
+
+.btn--with-arrow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 40px 13px;
+  border: 2px solid #264b8d;
+  background-color: #fff;
+  color: #264b8d;
+  @include media-tab-s {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.btn--with-arrow:hover {
+  color: #30a3db;
+  border: 2px solid #30a3db;
+  transition: all 0.1s ease-out;
+}
+
+.btn--with-arrow::after {
+  position: absolute;
+  top: 55%;
+  right: 20px;
+  width: 7px;
+  height: 7px;
+  margin-top: -7px;
+  content: "";
+  border-top: solid 2px #264b8d;
+  border-right: solid 2px #264b8d;
+  transition: all 0.2s;
+  transform: rotate(45deg);
+}
+
+.btn--with-arrow:hover::after {
+  border-top: solid 2px #30a3db;
+  border-right: solid 2px #30a3db;
+  transition: all 0.1s ease-out;
+}
+
+/* ********************* */
+/*表示非表示 */
+/* ********************* */
+
+.is-pc {
+  display: block;
+}
+
+@include media-tab-s {
+  .is-pc {
+    display: none;
+  }
+}
+
+.is-sp {
+  display: none;
+}
+
+@include media-tab-s {
+  .is-sp {
+    display: block;
+  }
+}
+
+/* ********************* */
+/* キービジュアル */
+/* ********************* */
+.key-visual {
+  background-image: url(../../image/top/kv_background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 90px 0;
+  margin-top: 150px;
+  @include media-tab-s {
+    padding-top: 0;
+  }
+  h2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Oxanium", cursive;
+    font-size: 33px;
+    font-weight: 200;
+    letter-spacing: 0.4em;
+    line-height: 1.2em;
+    padding: 120px;
+    @include media-tab-s {
+      padding: 100px 50px;
+    }
+  }
+  &_mid {
+    font-size: 0.8em;
+  }
+}
+
+/* ********************* */
+/* サブキービジュアル */
+/* ********************* */
+.sub_page_kv {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+  background-position-x: 100%;
+  background-size: 60%;
+  margin-top: 250px;
+  padding-bottom: 250px;
+  &.contact {
+    background-image: url(../../image/contact/contact_key_back.jpg);
+  }
+  &.about {
+    background-image: url(../../image/about/about_key_back.jpg);
+  }
+  &.news-kv {
+    background-image: url(../../image/news/news_key_back_2.jpg);
+  }
+  &.service {
+    background-image: url(../../image/service/service_key_back_1.jpg);
+  }
+  &.service-sec {
+    background-image: url(../../image/service/service_key_back_2.jpg);
+  }
+  @include media-tab-s {
+    background-size: 100%;
+  }
+  @include media-sp {
+    margin-top: 230px;
+    padding-bottom: 70px;
+    margin-bottom: 80px;
+  }
+}
+
+.sub_kv_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  @include media-sp {
+    top: -130px;
+  }
+}
+
+.sub_kv_container > h3 {
+  color: #264b8d;
+  font-size: 11rem;
+  font-family: "Oxanium", cursive;
+  font-weight: 300;
+  line-height: 1.25;
+  @include media-tab-s {
+    font-size: 72px;
+  }
+}
+
+.sub_kv_container > p {
+  color: #264b8d;
+  font-size: 18px;
+  white-space: nowrap;
+
+  letter-spacing: 1px;
+}
+
+// ヘッダーメニューアンダーライン
+.nav_item_line.active > a {
+  border-bottom: solid 1px #264b8d;
+}
+
+/* =====  セクションタイトルA　 ===== */
+.section-ttl {
+  margin-bottom: 50px;
+  @include media-tab-s {
+    margin-bottom: 30px;
+  }
+  &__main {
+    font-family: "Oxygen", cursive;
+    font-weight: 300;
+    color: #333;
+    font-size: 2.4rem;
+    color: #333;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    @include media-tab-s {
+      margin-bottom: 15px;
+    }
+  }
+  .icon {
+    width: 30px;
+    margin-right: 15px;
+  }
+}
+
+/* =====  セクションタイトルB　 ===== */
+.section-background-ttl {
+  position: relative;
+  margin-bottom: 50px;
+  @include media-tab-s {
+    margin-bottom: 30px;
+  }
+  h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .en {
+    position: relative;
+    z-index: -1;
+    font-family: "Oxygen", cursive;
+    font-weight: 300;
+    font-size: 10rem;
+    color: $gray;
+    line-height: 1;
+    text-align: center;
+    @include media-tab-s {
+      font-size: 6rem;
+    }
+  }
+}
+.section-background-ttl.left {
+  text-align-last: left;
+  position: relative;
+  margin-bottom: 50px;
+  @include media-tab-s {
+    margin-bottom: 30px;
+    text-align-last: auto;
+    text-align: center;
+  }
+  h3 {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    @include media-tab-s {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .en {
+    position: relative;
+    z-index: -1;
+    font-family: "Oxygen", cursive;
+    font-weight: 300;
+    font-size: 10rem;
+    color: $gray;
+    line-height: 1;
+    white-space: nowrap;
+    @include media-tab-s {
+      font-size: 6rem;
+      text-align: center;
+    }
+  }
+}

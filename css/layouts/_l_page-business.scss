@@ -1,0 +1,376 @@
+/* ********************* */
+/* 法人向けトレーニング */
+/* ********************* */
+.sub-service {
+  .container.wide {
+    background-color: $gray;
+    padding: 100px 0;
+    margin-bottom: 100px;
+    @include media-tab-s {
+      padding: 50px 0;
+      margin-bottom: 50px;
+    }
+  }
+  &__ttl {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+    @include media-tab-s {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+  }
+  .contents-wrap {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contents-ttl {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #62b5e1;
+    color: #fff;
+    padding: 30px 0;
+    @include media-tab-s {
+      padding: 20px 0;
+    }
+  }
+  .contents-txt {
+    max-width: 750px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    @include media-tab-s {
+      margin-bottom: 50px;
+      margin-top: 30px;
+    }
+  }
+  .contents-list {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    @include media-tab-s {
+      flex-direction: column;
+      padding-bottom: 50px;
+      margin-bottom: 50px;
+    }
+    &__ttl {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      @include media-tab-s {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+    }
+    &__txt {
+      margin-bottom: 50px;
+      @include media-tab-s {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .bold {
+    display: block;
+  }
+  .book {
+    display: flex;
+    @include media-tab-s {
+      margin-bottom: 50px;
+    }
+    &__right {
+      max-width: 100px;
+      margin-left: 20px;
+      @include media-tab-s {
+        max-width: 80px;
+        margin-left: 15px;
+      }
+    }
+  }
+  .btn-amazon {
+    display: block;
+    width: 250px;
+    @include media-tab-s {
+      width: 200px;
+    }
+  }
+  .btn--with-arrow {
+    max-width: 300px;
+    @include media-tab-s {
+      max-width: 100%;
+    }
+  }
+}
+
+/* ********************* */
+/* flow */
+/* ********************* */
+.sub-flow {
+  margin-bottom: 100px;
+  @include media-tab-s {
+    margin-bottom: 150px;
+  }
+  .container {
+    position: relative;
+  }
+
+  .section-ttl__sub {
+    text-align: center;
+    @include media-sp {
+      text-align: left;
+    }
+  }
+  &__container {
+    max-width: 520px;
+    margin: 0 auto;
+    @include media-sp {
+      max-width: 100%;
+    }
+  }
+  &__line {
+    position: relative;
+    top: 0;
+    left: 90px;
+    width: 1px;
+    height: 30px;
+    margin: 0;
+    background-color: #264b8d;
+    @include media-sp {
+      left: 10%;
+    }
+  }
+  &__item {
+    display: flex;
+    margin: 0 auto;
+    border: solid 1px #264b8d;
+    width: 80%;
+    @include media-sp {
+      width: 100%;
+    }
+  }
+  &__number {
+    font-family: "Oxygen", cursive;
+    color: #fff;
+    background-color: #264b8d;
+    padding: 24px;
+  }
+  &__contents {
+    color: #264b8d;
+    background-color: #fff;
+    margin-left: 21px;
+    padding: 24px;
+  }
+  &__titile {
+    font-size: 12rem;
+
+    white-space: nowrap;
+    color: #eff1f5;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 57%;
+    bottom: 1em;
+    @include media-sp {
+      transform: rotate(0);
+      bottom: -1.53em;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 8rem;
+    }
+  }
+}
+
+/* ********************* */
+/* 事例Pick コンサル受託開発 */
+/* ********************* */
+.sub-case {
+  .container.wide {
+    background-color: $gray;
+    padding: 100px 0;
+    margin-bottom: 100px;
+    @include media-tab-s {
+      padding: 50px 0;
+      margin-bottom: 50px;
+    }
+  }
+  &__ttl {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+    @include media-tab-s {
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+  }
+  .contents-wrap {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* 事例ピックアップのタブ切り替え ---start */
+.tab-group {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  .tab {
+    flex-grow: 1;
+    padding: 15px;
+    border: solid 1px #ccc;
+    text-align: center;
+    background-color: rgba(38, 75, 141, 0.4);
+    color: #fff;
+    cursor: pointer;
+    @include media-sp {
+      padding: 10px 5px;
+      font-size: 1.2rem;
+    }
+  }
+
+  .tab.is-active {
+    background: #264b8d;
+    color: #fff;
+    transition: all 0.2s ease-out;
+  }
+}
+
+.panel-group {
+  padding: 100px 0;
+  background: #fff;
+  @include media-sp {
+    padding: 50px 0;
+  }
+  .panel {
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .panel.is-show {
+    display: block;
+  }
+}
+
+/* 事例ピックアップのタブ切り替え ---end */
+.panel {
+  &-ttl {
+    text-align: center;
+    margin-bottom: 100px;
+    @include media-sp {
+      text-align: left;
+      margin-bottom: 50px;
+    }
+  }
+  &__wrap {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e8e8e8;
+    @include media-sp {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  &__content-area {
+    display: flex;
+    @include media-sp {
+      flex-direction: column;
+    }
+    .content-area {
+      &_img {
+        margin-right: 20px;
+        width: 45%;
+        @include media-sp {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      &_txt {
+        width: 55%;
+        @include media-sp {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .txt-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @include media-sp {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+/* ********************* */
+/* 事例Pick 法人向けトレーニング */
+/* ********************* */
+.tab_corpo {
+  flex-grow: 1;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(48, 163, 219, 0.8);
+  color: #fff;
+  padding: 18px 0;
+  cursor: pointer;
+}
+
+.content_corpo_text_area {
+  width: 50%;
+  margin-left: 42px;
+}
+
+.books_area {
+  display: flex;
+  margin-top: 27px;
+  margin-left: 24px;
+}
+
+.title_reference {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+
+  color: #333;
+}
+
+.book_title {
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #333;
+}
+
+.img_Btnamazon {
+  display: block;
+  margin-top: 36px;
+}
+
+.content_corpo > img {
+  margin-top: 54px;
+}
+
+.btn--with-arrow {
+  margin-top: 30px;
+}
+
+@media (max-width: 900px) {
+  .btn--with-arrow {
+    margin-top: 15px;
+  }
+}

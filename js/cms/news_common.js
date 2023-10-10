@@ -14,8 +14,8 @@ const getNewsListHtmlTagStr = (contents) => {
 const newsItemHtmlString = (id, date, category, title) => {
   return `
 		<a href="./news/post?content_id=${id}">
-      <li class="list_top_news">
-        <div class="top_news_info">
+      <li class="list-item">
+        <div class="list-item__info">
             <p class="news_date">${date}</p>
             <p class="news_kind">${category}</p>
         </div>

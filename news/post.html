@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社リベルクラフト</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Oxanium:wght@300&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="../image/common/favicon.ico">
     <link rel="stylesheet" href="../css/destyle.css">
-    <link rel="stylesheet" href="../css/main_style.css">
-    <link rel="stylesheet" href="../css/news_style.css">
+    <link rel="stylesheet" href="../css/pages/sub-common.css" />
+    <link rel="stylesheet" href="../css/pages/styles_main.css">
 </head>
 <body>
     <header class="header_top">
@@ -34,13 +37,13 @@
                     </ul>
                 </li>
                 <li class="nav_item_line nav_newsblog">
-                    <a href="/news">NEWS</a>
+                    <a href="../news.html">NEWS</a>
                 </li>
                 <li class="nav_item_line nav_about">
-                    <a href="/about">ABOUT US</a>
+                    <a href="../about.html">ABOUT US</a>
                 </li>
                 <li class="nav_contact">
-                    <a href="/contact">CONTACT</a>
+                    <a href="../contact.html">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +51,7 @@
         <!-- SP icon -->
         <div class="sp-menu">
             <div class="topLogo">
-                <a href="/index">
+                <a href="/">
                 <img src="../image/common/Libercraft_yoko_S.png" alt="" width="50px">
                 </a>
             </div>
@@ -61,7 +64,7 @@
         <span class="material-icons" id="close">close</span>
         <nav>
             <ul>
-            <li><a href="/index">TOP</a></li>
+            <li><a href="/">TOP</a></li>
             <li><a href=""><label for="acd-check">SERVICE</label></a>
                 <input id="acd-check" class="acd-check" type="checkbox">
                 <ul class="acMenu">
@@ -70,14 +73,14 @@
                     <li><a href="/business/training/">法人向けトレーニング</a></li>
                 </ul>
             </li>
-            <li><a href="/news/">NEWS</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/news.html">NEWS</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </div>
 
-    <section class="sub_page_kv">
+    <section class="sub_page_kv news-kv">
         <div class="sub_kv_container">
             <h3>
                 NEWS
@@ -86,18 +89,23 @@
     </section>
 
     <section class="sec_news_post">
-        <!-- Newsの詳細をJavascriptで描画 -->
-        <div id="news_post_detail"></div>
+        <div class="container">
+            <!-- Newsの詳細をJavascriptで描画 -->
+            <div id="news_post_detail"></div>
+        </div>
     </section>
 
-    <section class="contact_container">
-        <a href="/contact">
+    <section class="contact">
+        <a href="/contact.html">
             <div class="contact_btn">
-                <img src="../image/common/btnContact.png" alt="">
+                <div class="contact_btn__img">
+                     <img src="../../image/common/btnContact.png" alt="">
+                </div>
                 <p>CONTACT</p>
             </div>
         </a>
     </section>
+
 
     <footer class="footer">
         <div class="footer_inner">

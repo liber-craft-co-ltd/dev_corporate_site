@@ -1,168 +1,214 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>株式会社リベルクラフト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Oxanium:wght@300&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="./image/common/favicon.ico">
-    <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/main_style.css">
-    <link rel="stylesheet" href="css/about_style.css">
-</head>
-<body>
+    <link rel="icon" href="./image/common/favicon.ico" />
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/pages/sub-common.css" />
+    <link rel="stylesheet" href="css/pages/styles_main.css" />
+  </head>
+  <body>
     <header class="header_top">
-        <div class="header_wap">
+      <div class="header_wap">
         <div class="LC_logo">
-            <a href="/">
-                <img src="./image/common/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
-            </a>
+          <a href="/">
+            <img
+              src="./image/common/libercraft_yoko.png"
+              alt="logo"
+              width="160px"
+              height="auto"
+            />
+          </a>
         </div>
 
-            <!-- メニューITEM -->
-            <ul class="nav_item menu">
-                <li class="nav_item_line nav_top">
-                    <a href="/">TOP</a>
-                </li>
-                <li class="nav_item_line nav_service menu_appear_submenu">
-                    <a tabindex="-1">SERVICE</a>
-                    <ul class="menu_second_level">
-                        <li><a href="/school/craft-college">スクール事業（クラフトカレッジ）</a></li>
-                        <li><a href="/business/consulting">コンサルティング受託開発支援</a></li>
-                        <li><a href="/business/training">法人向けトレーニング</a></li>
-                    </ul>
-                </li>
-                <li class="nav_item_line nav_newsblog">
-                    <a href="/news">NEWS</a>
-                </li>
-                <li class="nav_item_line nav_about">
-                    <a href="/about">ABOUT US</a>
-                </li>
-                <li class="nav_contact">
-                    <a href="/contact">CONTACT</a>
-                </li>
+        <!-- メニューITEM -->
+        <ul class="nav_item menu">
+          <li class="nav_item_line">
+            <a href="/">TOP</a>
+          </li>
+          <li class="nav_item_line nav_service menu_appear_submenu">
+            <a tabindex="-1">SERVICE</a>
+            <ul class="menu_second_level">
+              <li>
+                <a href="/school/craft-college"
+                  >スクール事業（クラフトカレッジ）</a
+                >
+              </li>
+              <li>
+                <a href="/business/consulting">コンサルティング受託開発支援</a>
+              </li>
+              <li><a href="/business/training">法人向けトレーニング</a></li>
             </ul>
+          </li>
+          <li class="nav_item_line">
+            <a href="/news.html">NEWS</a>
+          </li>
+          <li class="nav_item_line active">
+            <a href="/about.html">ABOUT US</a>
+          </li>
+          <li class="nav_contact">
+            <a href="/contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- SP icon -->
+      <div class="sp-menu">
+        <div class="topLogo">
+          <a href="/index">
+            <img
+              src="./image/common/libercraft_yoko.png"
+              alt=""
+              width="50px"
+            />
+          </a>
         </div>
-    
-        <!-- SP icon -->
-        <div class="sp-menu">
-            <div class="topLogo">
-                <a href="/index">
-                <img src="./image/common/Libercraft_yoko_S.png" alt="" width="50px">
-                </a>
-            </div>
-            <span class="material-icons" id="open">menu</span>
-        </div>
+        <span class="material-icons" id="open">menu</span>
+      </div>
     </header>
-    
+
     <!-- SP menu -->
     <div class="overlay">
-        <span class="material-icons" id="close">close</span>
-        <nav>
-            <ul>
-            <li><a href="/index">TOP</a></li>
-            <li><a href=""><label for="acd-check">SERVICE</label></a>
-                <input id="acd-check" class="acd-check" type="checkbox">
-                <ul class="acMenu">
-                    <li><a href="/school/craft-college">スクール事業（クラフトカレッジ）</a></li>
-                    <li><a href="/business/consulting">コンサルティング受託開発支援</a></li>
-                    <li><a href="/business/training">法人向けトレーニング</a></li>
-                </ul>
-            </li>
-            <li><a href="/news">NEWS</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="/">TOP</a></li>
+          <li>
+            <a href=""><label for="acd-check">SERVICE</label></a>
+            <input id="acd-check" class="acd-check" type="checkbox" />
+            <ul class="acMenu">
+              <li>
+                <a href="/school/craft-college"
+                  >スクール事業（クラフトカレッジ）</a
+                >
+              </li>
+              <li>
+                <a href="/business/consulting">コンサルティング受託開発支援</a>
+              </li>
+              <li><a href="/business/training">法人向けトレーニング</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="/news.html">NEWS</a></li>
+          <li><a href="/about.html">ABOUT US</a></li>
+          <li><a href="/contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
     </div>
 
-    <section class="sub_page_kv">
-        <div class="sub_kv_container">
-            <h3>
-                ABOUT
-            </h3>
-            <p>リベルクラフトについて</p>
-        </div>
+    <section class="sub_page_kv about">
+      <div class="sub_kv_container">
+        <h3>ABOUT</h3>
+        <p>リベルクラフトについて</p>
+      </div>
     </section>
 
-    <section class="sec_about sec_message">
-        <span class="about_section_title">
-            <h4>トップメッセージ</h4>
-            <p>Message</p>
-        </span>
-
-        <div class="message_item_container">
-                <img src="./image/about/msg_item.png" alt="">
-                <p>
-                    ビッグデータ、AI、DXといった言葉が世間一般に知れ渡り、関連する技術が生産性や体験価値の向上をもたらし、暮らしがより豊かになる、という世界が実現し始めていると感じます。<br>
-                    しかし、そのような世界・社会の実現には、まだまだやらなければならない課題も多くあります。その中で、私たちはデータ・テクノロジーのスペシャリストとして、みなさんの暮らしを少しでも豊かにし、自由で楽しい生き方・事業ができるように、貢献をしたいと考えています。
-                </p>
+    <section class="message">
+      <div class="container">
+        <div class="section-background-ttl left">
+          <h3>トップメッセージ</h3>
+          <p class="en">Message</p>
         </div>
+        <div class="message__contents">
+          <div class="contents-wrap">
+            <div class="contents-wrap__img">
+              <img src="./image/about/msg_item.png" alt="" />
+            </div>
+            <p class="contents-wrap__txt">
+              ビッグデータ、AI、DXといった言葉が世間一般に知れ渡り、関連する技術が生産性や体験価値の向上をもたらし、暮らしがより豊かになる、という世界が実現し始めていると感じます。<br>しかし、そのような世界・社会の実現には、まだまだやらなければならない課題も多くあります。その中で、私たちはデータ・テクノロジーのスペシャリストとして、みなさんの暮らしを少しでも豊かにし、自由で楽しい生き方・事業ができるように、貢献をしたいと考えています。
+            </p>
+          </div>
+  
+        </div>
+      </div>
     </section>
 
-    <section class="sec_about sec_identity">
-        <span class="about_section_title">
-            <h4>企業理念</h4>
-            <p>Corporate Identity</p>
-        </span>
-        <div class="identity_item_container">
-        <p>
-            リベルクラフト（LiberCraft）という社名は「リベル（Liber）」と「クラフト（Craft）」という言葉を掛け合わせています。<br><br>
-            リベルはラテン語で「自由な」を意味し、また古代ローマの神の名リベルも意味しており、神リベルは「豊穣と酒と酩酊の神」として知られています。クラフトはよく知られている通り「お手製のものを創作する」といった意味です。<br><br>
-            私たちは、自由な発想で、私たちならではのモノを創り上げていきたいと考えています。そして、私たちのサービスを届ける方々にも、そういった事業・生き方ができるように支援したいと願っています。また私たち、そして関連する全ての方々の事業・人生としても、豊穣になる（ゆたかに実る）ことも夢見て、この社名を用いました。
-        </p>
-        <img src="./image/about/identity_item.png" alt="">
+    <section class="identity">
+      <div class="container">
+        <div class="section-background-ttl left">
+          <h3>企業理念</h3>
+          <p class="en">Identity</p>
         </div>
-    </section> 
+        <div class="message__contents">
+          <div class="contents-wrap reverce">
+            <div class="contents-wrap__img">
+              <img src="./image/about/identity_item.png" alt="" />
+            </div>
+            <p class="contents-wrap__txt">
+リベルクラフト（LiberCraft）という社名は「リベル（Liber）」と「クラフト（Craft）」という言葉を掛け合わせています。<br /><br />
+          リベルはラテン語で「自由な」を意味し、また古代ローマの神の名リベルも意味しており、神リベルは「豊穣と酒と酩酊の神」として知られています。クラフトはよく知られている通り「お手製のものを創作する」といった意味です。<br /><br />
+          私たちは、自由な発想で、私たちならではのモノを創り上げていきたいと考えています。そして、私たちのサービスを届ける方々にも、そういった事業・生き方ができるように支援したいと願っています。また私たち、そして関連する全ての方々の事業・人生としても、豊穣になる（ゆたかに実る）ことも夢見て、この社名を用いました。
+            </p>
+          </div>
+  
+        </div>
+      </div>
+    </section>
 
-    <section class="section_profile">
-        <span class="about_section_title profile_title">
-            <h4>会社概要</h4>
-            <p>Company Profile</p>
-        </span>
-
-        <table class="table_company">
+    <section class="identity">
+      <div class="container">
+        <div class="section-background-ttl">
+          <h3>会社概要</h3>
+          <p class="en">Profile</p>
+        </div>
+        <div class="message__contents">
+          <table class="identity__table">
             <tbody>
-                <tr>
-                    <th>社名</th>
-                    <td>
-                        <p>株式会社リベルクラフト</p>
-                        <p>（LiberCraft Co.,Ltd）</p>
-                    </td>
-                </tr>
-                <tr>
-                    <th>設立</th>
-                    <td>2021年12月2日</td>
-                </tr>
-                <tr>
-                    <th>事業内容</th>
-                    <td>
-                        <p>・データ分析・AIに関するコンサルティング、設計、開発、教育</p>
-                        <p>・インターネット等を利用したメディア事業及び情報発信業務</p>
-                        <p>・書籍・出版物の企画、制作</p>
-                    </td>
-                </tr>
+              <tr>
+                <th>社名</th>
+                <td>
+                  <p>株式会社リベルクラフト</p>
+                  <p>（LiberCraft Co.,Ltd）</p>
+                </td>
+              </tr>
+              <tr>
+                <th>設立</th>
+                <td>2021年12月2日</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  <p>・データ分析・AIに関するコンサルティング、設計、開発、教育</p>
+                  <p>・インターネット等を利用したメディア事業及び情報発信業務</p>
+                  <p>・書籍・出版物の企画、制作</p>
+                </td>
+              </tr>
             </tbody>
-        </table>
+          </table>
+        </div>
+      </div>
     </section>
 
-    <section class="contact_container">
-        <a href="/contact">
-        <div class="contact_btn">
-            <img src="./image/common/btnContact.png" alt="">
-            <p>CONTACT</p>
-        </div>
-        </a>
-    </section>
+    <section class="contact">
+      <a href="/contact.html">
+          <div class="contact_btn">
+              <div class="contact_btn__img">
+                    <img src="./image/common/btn_contact.png" alt="">
+              </div>
+              <p>CONTACT</p>
+          </div>
+      </a>
+  </section>
 
-    <footer class="footer">
-        <div class="footer_inner">
-            <p>© 2021 LiberCraft</p>
-        </div>
-    </footer>
+
+  <footer class="footer blue">
+    <div class="container">
+      <ul class="footer__links-lists">
+        <li class="lists-item"><a href="/terms-of-use.html" class="hover">利用規約</a></li>
+        <li class="lists-item"><a href="/commercial-transactions.html" class="hover">特定商取引法に基づく表記</a></li>
+        <li class="lists-item"><a href="/privacy-policy.html" class="hover">プライバシーポリシー</a></li>
+        <li class="lists-item"><a href="/contact.html" target="__blank" rel="noopener noreferrer" class="hover">お問合せ</a></li>
+      </ul>
+    </div>
+    <p class="copy">© LiberCraft Co.,Ltd All rights Reserved</p>
+  </footer>
 
     <script src="./js/nav.js"></script>
-
-</body>
+  </body>
 </html>

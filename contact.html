@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社リベルクラフト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Oxanium:wght@300&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="icon" href="./image/common/favicon.ico">
-    <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="css/main_style.css">
-    <link rel="stylesheet" href="css/contact_style.css">
+    <link rel="icon" href="../../image/common/favicon.ico">
+    <link rel="stylesheet" href="../../css/destyle.css">
+    <link rel="stylesheet" href="../../css/pages/sub-common.css" />
+    <link rel="stylesheet" href="../../css/pages/styles_main.css" />
+    <link rel="stylesheet" href="../../css/pages/styles_business.css">
 </head>
 <body>
     <header class="header_top">
         <div class="header_wap">
         <div class="LC_logo">
             <a href="/">
-                <img src="./image/common/Libercraft_yoko_S.png" alt="logo" width="160px" height="auto"> 
+                <img src="./image/common/libercraft_yoko.png" alt="logo" width="160px" height="auto"> 
             </a>
         </div>
 
             <!-- メニューITEM -->
             <ul class="nav_item menu">
-                <li class="nav_item_line nav_top">
+                <li class="nav_item_line">
                     <a href="/">TOP</a>
                 </li>
                 <li class="nav_item_line nav_service menu_appear_submenu">
@@ -33,14 +37,14 @@
                         <li><a href="/business/training">法人向けトレーニング</a></li>
                     </ul>
                 </li>
-                <li class="nav_item_line nav_newsblog">
-                    <a href="/news">NEWS</a>
+                <li class="nav_item_line">
+                    <a href="/news.html">NEWS</a>
                 </li>
-                <li class="nav_item_line nav_about">
-                    <a href="/about">ABOUT US</a>
+                <li class="nav_item_line">
+                    <a href="/about.html">ABOUT US</a>
                 </li>
                 <li class="nav_contact">
-                    <a href="/contact">CONTACT</a>
+                    <a href="/contact.html">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -48,8 +52,8 @@
 		<!-- SP icon -->
         <div class="sp-menu">
             <div class="topLogo">
-                <a href="/index">
-                <img src="./image/common/Libercraft_yoko_S.png" alt="" width="50px">
+                <a href="/">
+                <img src="./image/common/libercraft_yoko.png" alt="" width="50px">
                 </a>
             </div>
             <span class="material-icons" id="open">menu</span>
@@ -62,7 +66,7 @@
         <span class="material-icons" id="close">close</span>
         <nav>
             <ul>
-            <li><a href="/index">TOP</a></li>
+            <li><a href="/">TOP</a></li>
             <li><a href=""><label for="acd-check">SERVICE</label></a>
                 <input id="acd-check" class="acd-check" type="checkbox">
                 <ul class="acMenu">
@@ -71,14 +75,14 @@
                     <li><a href="/business/training">法人向けトレーニング</a></li>
                 </ul>
             </li>
-            <li><a href="/news">NEWS</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/news.html">NEWS</a></li>
+            <li><a href="/about.html">ABOUT US</a></li>
+            <li><a href="/contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </div>
     
-    <section class="sub_page_kv">
+    <section class="sub_page_kv contact">
         <div class="sub_kv_container">
             <h3>
                 CONTACT
@@ -87,128 +91,136 @@
         </div>
     </section>
 
-    <section class="sec_contact">
-        <form 
-            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePF-HZwh0xq_uUtNYgHsaqLIpG5azumH9lsTQLcx4QQDYZdQ/formResponse" 
-            method="POST" 
-            target="hidden_iframe"
-            id="mG61Hd" 
-            onsubmit="submitted=true;"
-        >
-
-            <!-- 名前 -->
-            <div class="contact_content_item">
-                <div class="contact_content_heading">
-                    <p>
-                        <span class="contact_content_label_must">必須</span>
-                        <span class="contact_content_label">お名前</span>
-                    </p>
+    <section class="sub_contact">
+        <div class="container">
+            <form 
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSePF-HZwh0xq_uUtNYgHsaqLIpG5azumH9lsTQLcx4QQDYZdQ/formResponse" 
+                method="POST" 
+                target="hidden_iframe"
+                id="mG61Hd" 
+                onsubmit="submitted=true;"
+            >
+    
+                <!-- 名前 -->
+                <div class="sub_contact__item">
+                    <div class="item-ttl">
+                        <p>
+                            <span class="must">必須</span>
+                            <span class="label">お名前</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <input class="contact_input" type="text" name="entry.2140654344" required>
+                    </div>
                 </div>
-                <div class="contact_detail">
-                    <input class="contact_input" type="text" name="entry.2140654344" required>
+    
+                <!-- 会社名 -->
+                <div class="sub_contact__item">
+                    <div class="item-ttl">
+                        <p>
+                            <span class="must">必須</span>
+                            <span class="label">会社名</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <input class="contact_input" type="text" name="entry.1486343906" required>
+                    </div>
                 </div>
-            </div>
-
-            <!-- 会社名 -->
-            <div class="contact_content_item">
-                <div class="contact_content_heading">
-                    <p>
-                        <span class="contact_content_label_must">必須</span>
-                        <span class="contact_content_label">会社名</span>
-                    </p>
+    
+                <!-- メールアドレス -->
+                <div class="sub_contact__item">
+                    <div class="item-ttl">
+                        <p>
+                            <span class="must">必須</span>
+                            <span class="label">メールアドレス</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <input class="contact_input" type="email" name="entry.1419470964" required>
+                    </div>
                 </div>
-                <div class="contact_detail">
-                    <input class="contact_input" type="text" name="entry.1486343906" required>
+            
+                <!-- 電話番号 -->
+                <!-- <div class="sub_contact__item">
+                    <div class="item-ttl">
+                        <p>
+                            <span class="must" style="visibility: hidden;">必須</span>
+                            <span class="label">電話番号</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <input class="contact_input" type="tel" name="entry.1136647211">
+                    </div>
+                </div> -->
+    
+               <!-- お問合せ -->
+                <div class="sub_contact__item">
+                    <div class="item-ttl">
+                        <p>
+                            <span class="must">必須</span>
+                            <span class="label">お問合せ内容</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                        <textarea class="contact_textarea" name="entry.1990905103" required></textarea>
+                    </div>
                 </div>
-            </div>
-
-            <!-- メールアドレス -->
-            <div class="contact_content_item">
-                <div class="contact_content_heading">
-                    <p>
-                        <span class="contact_content_label_must">必須</span>
-                        <span class="contact_content_label">メールアドレス</span>
-                    </p>
+    
+                <div class="privacy_policy">
+                    <div class="privacy-policy-detail">
+                        １．個人情報の管理<br>
+                        当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。<br>
+                        <br>
+                        ２・個人情報の利用目的<br>
+                        本ウェブサイトでは、お客様からのお問い合わせ時に、お名前、e-mailアドレス、電話番号等の個人情報をご登録いただく場合がございますが、これらの個人情報はご提供いただく際の目的以外では利用いたしません。<br>
+                        お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。<br>
+                        <br>
+                        ３．個人情報の第三者への開示・提供の禁止<br>
+                        当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。<br>
+                        ・お客さまの同意がある場合<br>
+                        ・お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合<br>
+                        ・法令に基づき開示することが必要である場合<br>
+                        <br>
+                        ４．個人情報の安全対策<br>
+                        当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。<br>
+                        <br>
+                        ５．ご本人の照会<br>
+                        お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。<br>
+                        <br>
+                        ６．法令、規範の遵守と見直し<br>
+                        当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。<br>
+                    </div>
+                    <div class="agree-policy">
+                        <input type="checkbox" name="entry.1916962393" value="1" required>
+                        <span>個人情報保護規定に同意する</span>
+                    </div>
                 </div>
-                <div class="contact_detail">
-                    <input class="contact_input" type="email" name="entry.1419470964" required>
+    
+                <div class="contact_confilm">
+                    <button class="btnSubmit" type="submit">送 信</button>
                 </div>
-            </div>
-        
-            <!-- 電話番号 -->
-            <!-- <div class="contact_content_item">
-                <div class="contact_content_heading">
-                    <p>
-                        <span class="contact_content_label_must" style="visibility: hidden;">必須</span>
-                        <span class="contact_content_label">電話番号</span>
-                    </p>
-                </div>
-                <div class="contact_detail">
-                    <input class="contact_input" type="tel" name="entry.1136647211">
-                </div>
-            </div> -->
-
-           <!-- お問合せ -->
-            <div class="contact_content_item">
-                <div class="contact_content_heading">
-                    <p>
-                        <span class="contact_content_label_must">必須</span>
-                        <span class="contact_content_label">お問合せ内容</span>
-                    </p>
-                </div>
-                <div class="contact_detail">
-                    <textarea class="contact_textarea" name="entry.1990905103" required></textarea>
-                </div>
-            </div>
-
-            <div class="privacy_policy">
-                <div class="privacy-policy-detail">
-                    １．個人情報の管理<br>
-                    当社は、お客さまの個人情報を正確かつ最新の状態に保ち、個人情報への不正アクセス・紛失・破損・改ざん・漏洩などを防止するため、セキュリティシステムの維持・管理体制の整備・社員教育の徹底等の必要な措置を講じ、安全対策を実施し個人情報の厳重な管理を行ないます。<br>
-                    <br>
-                    ２・個人情報の利用目的<br>
-                    本ウェブサイトでは、お客様からのお問い合わせ時に、お名前、e-mailアドレス、電話番号等の個人情報をご登録いただく場合がございますが、これらの個人情報はご提供いただく際の目的以外では利用いたしません。<br>
-                    お客さまからお預かりした個人情報は、当社からのご連絡や業務のご案内やご質問に対する回答として、電子メールや資料のご送付に利用いたします。<br>
-                    <br>
-                    ３．個人情報の第三者への開示・提供の禁止<br>
-                    当社は、お客さまよりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。<br>
-                    ・お客さまの同意がある場合<br>
-                    ・お客さまが希望されるサービスを行なうために当社が業務を委託する業者に対して開示する場合<br>
-                    ・法令に基づき開示することが必要である場合<br>
-                    <br>
-                    ４．個人情報の安全対策<br>
-                    当社は、個人情報の正確性及び安全性確保のために、セキュリティに万全の対策を講じています。<br>
-                    <br>
-                    ５．ご本人の照会<br>
-                    お客さまがご本人の個人情報の照会・修正・削除などをご希望される場合には、ご本人であることを確認の上、対応させていただきます。<br>
-                    <br>
-                    ６．法令、規範の遵守と見直し<br>
-                    当社は、保有する個人情報に関して適用される日本の法令、その他規範を遵守するとともに、本ポリシーの内容を適宜見直し、その改善に努めます。<br>
-                </div>
-                <div class="agree-policy">
-                    <input type="checkbox" name="entry.1916962393" value="1" required>
-                    <span>個人情報保護規定に同意する</span>
-                </div>
-            </div>
-
-            <div class="contact_confilm">
-                <button class="btnSubmit" type="submit">送 信</button>
-            </div>
-
-            <!-- 遷移先のURL -->
-            <script type="text/javascript">
-                var submitted = false;
-            </script>
-            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact-after-sending';}"></iframe>
-        </form>
+    
+                <!-- 遷移先のURL -->
+                <script type="text/javascript">
+                    var submitted = false;
+                </script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='/contact-after-sending';}"></iframe>
+            </form>
+        </div>
 
     </section>
 
-    <footer class="footer">
-        <div class="footer_inner">
-            <p>© 2021 LiberCraft</p>
-        </div>
-    </footer>
+  <footer class="footer blue">
+    <div class="container">
+      <ul class="footer__links-lists">
+        <li class="lists-item"><a href="/terms-of-use.html" class="hover">利用規約</a></li>
+        <li class="lists-item"><a href="/commercial-transactions.html" class="hover">特定商取引法に基づく表記</a></li>
+        <li class="lists-item"><a href="/privacy-policy.html" class="hover">プライバシーポリシー</a></li>
+        <li class="lists-item"><a href="/contact.html" target="__blank" rel="noopener noreferrer" class="hover">お問合せ</a></li>
+      </ul>
+    </div>
+    <p class="copy">© LiberCraft Co.,Ltd All rights Reserved</p>
+  </footer>
 
     <script src="./js/nav.js"></script>
 
