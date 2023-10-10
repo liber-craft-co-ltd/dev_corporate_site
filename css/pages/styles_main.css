@@ -690,11 +690,6 @@
 /* ********************* */
 /* POST_NEWS */
 /* ********************* */
-.sec_news_post {
-  width: 60%;
-  margin: 0 auto;
-}
-
 .news_post_news_option_area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,6 +727,12 @@
   color: #333;
   letter-spacing: 1px;
   font-size: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .news_post_content {
+    margin-bottom: 100px;
+  }
 }
 
 .news_post_content p {
