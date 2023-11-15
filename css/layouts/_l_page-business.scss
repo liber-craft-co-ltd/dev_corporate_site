@@ -8,7 +8,7 @@
     margin-bottom: 100px;
     @include media-tab-s {
       padding: 50px 0;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
   }
   &__ttl {
@@ -61,6 +61,15 @@
       flex-direction: column;
       padding-bottom: 50px;
       margin-bottom: 50px;
+    }
+    &__left {
+      margin-right: 80px;
+      width: 90%;
+
+      @include media-tab-s {
+        margin-right: 0;
+        width: 100%;
+      }
     }
     &__ttl {
       font-size: 2rem;
@@ -372,5 +381,173 @@
 @media (max-width: 900px) {
   .btn--with-arrow {
     margin-top: 15px;
+  }
+}
+
+.worry {
+  background-color: #f7f7f7;
+    padding: 100px 0;
+    @include media-sp {
+      padding: 50px 0;
+    }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .list-item {
+    width: 49%;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    @include media-sp {
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.needs {
+    padding: 100px 0;
+    @include media-sp {
+      padding: 50px 0;
+    }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    @include media-sp {
+      flex-direction: column;
+    }
+  }
+  .list-item {
+    width: 48%;
+    padding: 40px;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    @include media-sp {
+      width: 100%;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .txt-area {
+      margin-bottom: 20px;
+    }
+    &__ttl {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #62b5e1;
+      margin-bottom: 15px;
+      @include media-sp {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.customize {
+  margin-bottom: 100px;
+   @include media-sp {
+     margin-bottom: 50px;
+   }
+  .container {
+    padding: 80px 100px;
+    background-color: #eef9fb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tab-s {
+      flex-direction: column;
+      padding: 50px 30px;
+    }
+    @include media-sp {
+      padding: 50px 20px;
+    }
+  }
+  .ttl {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #62b5e1;
+    margin-bottom: 20px;
+    @include media-tab-s {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+  .ai-blue {
+    font-weight: bold;
+    color: #62b5e1;
+  }
+  &__img {
+    max-width: 320px;
+    margin-left: 50px;
+    @include media-tab-s {
+      margin-left: 0;
+      margin-top: 30px;
+    }
+    @include media-sp {
+      width: 80%;
+    }
+  }
+}
+
+.cv {
+  padding: 50px 0;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #fff;
+  @include media-tab {
+    padding: 60px 0;
+  }
+    @include media-sp {
+      margin-bottom: 50px;
+    }
+  &.blue {
+    background-color: $blue;
+  }
+  &-img {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    @include media-tab {
+      width: 100%;
+    }
+  }
+  &-ttl {
+    font-weight: bold;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    @include media-tab {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+  &-sub-txt {
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    @include media-tab {
+      font-size: 1.6rem;
+    }
+  }
+  .contents-txt {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .caution {
+    font-size: 1.6rem;
+    @include media-tab {
+      font-size: 1.2rem;
+    }
   }
 }

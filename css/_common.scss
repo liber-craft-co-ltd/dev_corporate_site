@@ -36,8 +36,13 @@ a {
 }
 .container.wide {
   max-width: 1100px;
-  width: 90%;
-  margin: 0 auto;
+  // width: 90%;
+  // margin: 0 auto;
+}
+.container.narrow {
+  max-width: 750px;
+  // width: 90%;
+  // margin: 0 auto;
 }
 
 /* =====  表示非表示 ===== */
@@ -230,6 +235,23 @@ a {
       }
     }
   }
+  &.red {
+    background-color: $red;
+    color: #fff;
+    border: 2px solid $red;
+    &::after {
+      border-top: solid 2px $white;
+      border-right: solid 2px $white;
+    }
+    &:hover {
+      background-color: #fff;
+      color: $red;
+      &::after {
+        border-top: solid 2px $red;
+        border-right: solid 2px $red;
+      }
+    }
+  }
 }
 
 .txt-btn {
@@ -413,6 +435,16 @@ a {
     &:hover {
       transition: 0.4s;
       color: $orange;
+      background-color: #fff;
+    }
+  }
+  &.red {
+    color: #fff;
+    background-color: $red;
+    border: 1px solid $red;
+    &:hover {
+      transition: 0.4s;
+      color: $red;
       background-color: #fff;
     }
   }
@@ -1645,8 +1677,16 @@ a {
 }
 
 .footer.blue {
-  background-color: #264b8d;
+  background-color: $blue;
   padding-top: 50px;
+}
+
+.footer.green {
+  background-color: $green;
+}
+
+.footer.ai-blue {
+  background-color: $ai-blue;
 }
 
 .next-section {
@@ -1725,4 +1765,8 @@ a {
 .slope {
   transform: matrix(0.98, 0, -0.18, 1, 0, 0);
   font-weight: bold;
+}
+
+.red {
+  color: $red;
 }
