@@ -1,4 +1,4 @@
-const query = "https://liber-craft.microcms.io/api/v1/corporate-news?orders=-createdAt"
+const query = "https://liber-craft.microcms.io/api/v1/corporate-news?orders=-createdAt&limit=100"
 
 fetch(query, {
   headers: {
