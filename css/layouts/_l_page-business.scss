@@ -1,5 +1,5 @@
 /* ********************* */
-/* 法人向けトレーニング */
+/* 法人研修事業&コンサルティング・受託開発支援事業共通 */
 /* ********************* */
 .sub-service {
   .container.wide {
@@ -13,13 +13,33 @@
   }
   &__ttl {
     text-align: center;
-    font-size: 2.4rem;
+    h4 {
+      font-size: 2.4rem;
+      @include media-tab-s {
+        font-size: 2.2rem;
+      }
+    }
+
     margin-bottom: 50px;
     @include media-tab-s {
-      font-size: 1.8rem;
       margin-bottom: 30px;
     }
   }
+  &__ttl-sub-txt {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 30px;
+    @include media-tab-s {
+      text-align: left;
+      margin-top: 15px;
+    }
+  }
+}
+
+/* ********************* */
+/* 法人研修事業 */
+/* ********************* */
+.sub-service {
   .contents-wrap {
     background-color: #fff;
     width: 90%;
@@ -120,87 +140,392 @@
 }
 
 /* ********************* */
-/* flow */
+/* コンサルティング・受託開発支援事業 */
 /* ********************* */
-.sub-flow {
-  margin-bottom: 100px;
-  @include media-tab-s {
-    margin-bottom: 150px;
+.feature {
+  padding: 100px 0;
+  @include media-sp {
+    padding: 50px 0;
   }
-  .container {
-    position: relative;
-  }
-
-  .section-ttl__sub {
-    text-align: center;
-    @include media-sp {
-      text-align: left;
-    }
-  }
-  &__container {
-    max-width: 520px;
-    margin: 0 auto;
-    @include media-sp {
-      max-width: 100%;
-    }
-  }
-  &__line {
-    position: relative;
-    top: 0;
-    left: 90px;
-    width: 1px;
-    height: 30px;
-    margin: 0;
-    background-color: #264b8d;
-    @include media-sp {
-      left: 10%;
-    }
-  }
-  &__item {
+  .list-item {
     display: flex;
-    margin: 0 auto;
-    border: solid 1px #264b8d;
-    width: 80%;
+    justify-content: space-between;
+    align-items: center;
     @include media-sp {
-      width: 100%;
+      flex-direction: column;
+    }
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    @include media-sp {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    .list-img {
+      width: 35%;
+      @include media-sp {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+    .list-txt {
+      width: 60%;
+      @include media-sp {
+        width: 100%;
+      }
     }
   }
-  &__number {
-    font-family: "Oxygen", cursive;
-    color: #fff;
-    background-color: #264b8d;
-    padding: 24px;
+  .number {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: $ai-blue;
+    @include media-tab-s {
+      font-size: 2rem;
+    }
   }
-  &__contents {
-    color: #264b8d;
-    background-color: #fff;
-    margin-left: 21px;
-    padding: 24px;
-  }
-  &__titile {
-    font-size: 12rem;
-
-    white-space: nowrap;
-    color: #eff1f5;
-    transform: rotate(-90deg);
-    position: absolute;
-    left: 57%;
-    bottom: 1em;
-    @include media-sp {
-      transform: rotate(0);
-      bottom: -1.53em;
-      z-index: -1;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 8rem;
+  .list-ttl {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $ai-blue;
+    margin-bottom: 20px;
+    @include media-tab-s {
+      font-size: 2rem;
+      margin-bottom: 10px;
     }
   }
 }
 
+.flow {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  @include media-sp {
+    padding: 50px 0;
+  }
+  .list-item {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    @include media-sp {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .number {
+    background-color: $blue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 0 35px;
+    @include media-sp {
+      padding: 10px 0;
+      flex-direction: column;
+    }
+
+    span {
+      display: block;
+      text-align: center;
+      line-height: 1.25;
+      font-weight: bold;
+      @include media-sp {
+        display: inline-block;
+      }
+    }
+
+    .step {
+      font-size: 1.2rem;
+      @include media-sp {
+        font-size: 1rem;
+      }
+    }
+    .number-txt {
+      font-size: 2.8rem;
+      @include media-sp {
+        font-size: 2rem;
+      }
+    }
+  }
+  .contents {
+    padding: 30px;
+    background-color: #fff;
+    @include media-sp {
+      padding: 20px;
+    }
+    &__wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-ttl {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $ai-blue;
+      margin-bottom: 15px;
+      @include media-tab-s {
+        display: flex;
+        justify-content: space-between;
+      }
+      @include media-sp {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        align-content: center;
+      }
+    }
+    &-txt {
+      font-size: 1.4rem;
+      flex: 1;
+    }
+  }
+  .list-img {
+    width: 50px;
+    margin-left: 20px;
+    @include media-tab-s {
+      width: 40px;
+    }
+  }
+  .arrow {
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    @include media-sp {
+      width: 20px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.service {
+  padding: 100px 0;
+  @include media-sp {
+    padding: 50px 0;
+  }
+}
+
+.case {
+  padding: 100px 0 50px;
+  @include media-sp {
+    padding: 50px 0;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include media-sp {
+      flex-direction: column;
+    }
+  }
+  .list-item {
+    width: 48%;
+    margin-bottom: 50px;
+    @include media-sp {
+      width: 100%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__ttl {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #62b5e1;
+      margin-bottom: 15px;
+      @include media-sp {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+    }
+    &__txt {
+      font-size: 1.4rem;
+    }
+    &__img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.cv-contact {
+  background-color: #eef9fb;
+  margin-bottom: 100px;
+  @include media-sp {
+    margin-bottom: 50px;
+  }
+  .container {
+    padding: 80px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tab-s {
+      flex-direction: column;
+      padding: 50px 30px;
+    }
+    @include media-sp {
+      padding: 50px 0;
+    }
+  }
+  .ttl {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #62b5e1;
+    margin-bottom: 20px;
+    @include media-tab-s {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+  .ai-blue {
+    font-weight: bold;
+    color: #62b5e1;
+  }
+  &__img {
+    max-width: 320px;
+    margin-left: 50px;
+    @include media-tab-s {
+      margin-left: 0;
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+    @include media-sp {
+      width: 80%;
+      
+    }
+  }
+  .contents {
+    margin-bottom: 30px;
+  }
+  .cv-contact_btn {
+    max-width: 440px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #264b8d;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "Oxygen", cursive;
+    @include media-sp {
+      max-width: 100%;
+    }
+
+    &__img {
+      width: 20px;
+      margin-right: 10px;
+      padding-bottom: 12px;
+      @include media-tab-s {
+        width: 25px;
+        padding-bottom: 11px;
+      }
+    }
+    @include media-tab-s {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    &:hover {
+      background-color: #30a3db;
+      transition: all 0.1s ease-out;
+    }
+  }
+  .is-sp {
+    width: 100%;
+  }
+}
+
+/* ********************* */
+/* flow */
+/* ********************* */
+// .sub-flow {
+//   margin-bottom: 100px;
+//   @include media-tab-s {
+//     margin-bottom: 150px;
+//   }
+//   .container {
+//     position: relative;
+//   }
+
+//   .section-ttl__sub {
+//     text-align: center;
+//     @include media-sp {
+//       text-align: left;
+//     }
+//   }
+//   &__container {
+//     max-width: 520px;
+//     margin: 0 auto;
+//     @include media-sp {
+//       max-width: 100%;
+//     }
+//   }
+//   &__line {
+//     position: relative;
+//     top: 0;
+//     left: 90px;
+//     width: 1px;
+//     height: 30px;
+//     margin: 0;
+//     background-color: #264b8d;
+//     @include media-sp {
+//       left: 10%;
+//     }
+//   }
+//   &__item {
+//     display: flex;
+//     margin: 0 auto;
+//     border: solid 1px #264b8d;
+//     width: 80%;
+//     @include media-sp {
+//       width: 100%;
+//     }
+//   }
+//   &__number {
+//     font-family: "Oxygen", cursive;
+//     color: #fff;
+//     background-color: #264b8d;
+//     padding: 24px;
+//   }
+//   &__contents {
+//     color: #264b8d;
+//     background-color: #fff;
+//     margin-left: 21px;
+//     padding: 24px;
+//   }
+//   &__titile {
+//     font-size: 12rem;
+
+//     white-space: nowrap;
+//     color: #eff1f5;
+//     transform: rotate(-90deg);
+//     position: absolute;
+//     left: 57%;
+//     bottom: 1em;
+//     @include media-sp {
+//       transform: rotate(0);
+//       bottom: -1.53em;
+//       z-index: -1;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       font-size: 8rem;
+//     }
+//   }
+// }
+
 /* ********************* */
 /* 事例Pick コンサル受託開発 */
 /* ********************* */
-.sub-case {
+.service {
   .container.wide {
     background-color: $gray;
     padding: 100px 0;
@@ -223,6 +548,9 @@
     background-color: #fff;
     width: 90%;
     margin: 0 auto;
+    @include media-sp {
+      width: 100%;
+    }
   }
 }
 
@@ -253,8 +581,8 @@
 }
 
 .panel-group {
-  padding: 100px 0;
-  background: #fff;
+  padding: 80px 0;
+  background: #f7f7f7;
   @include media-sp {
     padding: 50px 0;
   }
@@ -273,7 +601,7 @@
 .panel {
   &-ttl {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     @include media-sp {
       text-align: left;
       margin-bottom: 50px;
@@ -300,7 +628,7 @@
     }
     .content-area {
       &_img {
-        margin-right: 20px;
+        margin-right: 50px;
         width: 45%;
         @include media-sp {
           width: 100%;
@@ -318,6 +646,7 @@
   .txt-title {
     font-size: 1.8rem;
     font-weight: bold;
+    color: $ai-blue;
     margin-bottom: 20px;
     @include media-sp {
       text-align: center;
@@ -327,7 +656,7 @@
 }
 
 /* ********************* */
-/* 事例Pick 法人向けトレーニング */
+/* 事例Pick 法人研修事業 */
 /* ********************* */
 .tab_corpo {
   flex-grow: 1;
@@ -386,10 +715,10 @@
 
 .worry {
   background-color: #f7f7f7;
-    padding: 100px 0;
-    @include media-sp {
-      padding: 50px 0;
-    }
+  padding: 100px 0;
+  @include media-sp {
+    padding: 50px 0;
+  }
   &-list {
     display: flex;
     justify-content: space-between;
@@ -413,10 +742,10 @@
 }
 
 .needs {
-    padding: 100px 0;
-    @include media-sp {
-      padding: 50px 0;
-    }
+  padding: 100px 0;
+  @include media-sp {
+    padding: 50px 0;
+  }
   &-list {
     display: flex;
     justify-content: space-between;
@@ -455,9 +784,9 @@
 
 .customize {
   margin-bottom: 100px;
-   @include media-sp {
-     margin-bottom: 50px;
-   }
+  @include media-sp {
+    margin-bottom: 50px;
+  }
   .container {
     padding: 80px 100px;
     background-color: #eef9fb;
@@ -507,9 +836,9 @@
   @include media-tab {
     padding: 60px 0;
   }
-    @include media-sp {
-      margin-bottom: 50px;
-    }
+  @include media-sp {
+    margin-bottom: 50px;
+  }
   &.blue {
     background-color: $blue;
   }

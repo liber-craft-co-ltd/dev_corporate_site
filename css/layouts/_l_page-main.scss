@@ -233,7 +233,7 @@
 }
 
 /* ********************* */
-/* CONTACTフッター */
+/* CONTACT */
 /* ********************* */
 
 .contact {
@@ -271,6 +271,47 @@
       background-color: #30a3db;
       transition: all 0.1s ease-out;
     }
+  }
+}
+
+/* ********************* */
+/* RECRUIT*/
+/* ********************* */
+
+.recruite {
+  &-link-lists {
+    margin-bottom: 100px;
+    @include media-tab-s {
+      bottom: 50px;
+    }
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include media-tab-s {
+        flex-direction: column;
+      }
+    }
+    li {
+      margin-right: 20px;
+      width: 33%;
+      @include media-tab-s {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      &:last-child {
+        margin-right: 0;
+        @include media-tab-s {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .full-color-btn {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -487,6 +528,11 @@
 /* POST_NEWS */
 /* ********************* */
 
+.news_post_detail ul {
+  margin-left: 1.5em;
+  list-style-type: disc;
+}
+
 .news_post_news_option_area {
   display: flex;
   margin-bottom: 21px;
@@ -539,7 +585,7 @@
 }
 
 .news_post_img img {
-  width: 330px;
+  max-width: 750px;
 }
 
 .news_post_body a {

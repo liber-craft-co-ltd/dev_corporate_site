@@ -85,7 +85,7 @@ img {
 
 .nav_item_line > a {
   display: block;
-  margin: 30px;
+  padding: 30px;
   padding-bottom: 27px;
 }
 
@@ -98,12 +98,12 @@ img {
   display: block;
   color: #fff;
   background-color: #264b8d;
-  padding: 27px;
+  padding: 29px;
 }
 
 .nav_contact > a:hover {
   background-color: rgba(48, 163, 219, 1);
-  transition: all 0.1s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 /* 下層メニューの挙動 */
@@ -120,11 +120,10 @@ img {
 .menu_appear_submenu .menu_second_level {
   position: absolute;
   left: 0;
-  top: 70px;
+  top: 83px;
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  padding: 60px 2%;
   background: rgba(38, 75, 141, 0.9);
   transition: 0.5s;
 }
@@ -136,10 +135,17 @@ img {
 }
 
 .menu_appear_submenu .menu_second_level > li {
-  margin: 0 auto;
+  flex: 1;
   border: none;
   text-align: center;
   color: #fff;
+}
+.menu_appear_submenu .menu_second_level a {
+  display: block;
+  width: 100%;
+  padding: 60px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .menu_second_level > li:hover {
@@ -378,7 +384,7 @@ img {
 .btn--with-arrow:hover {
   color: #30a3db;
   border: 2px solid #30a3db;
-  transition: all 0.1s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .btn--with-arrow::after {
@@ -398,7 +404,42 @@ img {
 .btn--with-arrow:hover::after {
   border-top: solid 2px #30a3db;
   border-right: solid 2px #30a3db;
-  transition: all 0.1s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.full-color-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 0px;
+  border: 2px solid #264b8d;
+  background-color: #fff;
+  color: #264b8d;
+  @include media-tab-s {
+    width: 100%;
+    font-size: 16px;
+  }
+  span {
+    display: block;
+    font-weight: bold;
+    
+  }
+  .small {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+  
+}
+
+.full-color-btn:hover {
+  color: #30a3db;
+  border: 2px solid #30a3db;
+  transition: all 0.4s ease-out;
 }
 
 /* ********************* */
@@ -468,6 +509,9 @@ img {
   background-size: 60%;
   margin-top: 250px;
   padding-bottom: 250px;
+  &.rectuit {
+    background-image: url(../../image/recruit/recruit_key_back.jpg);
+  }
   &.contact {
     background-image: url(../../image/contact/contact_key_back.jpg);
   }
@@ -524,7 +568,8 @@ img {
 
 // ヘッダーメニューアンダーライン
 .nav_item_line.active > a {
-  border-bottom: solid 1px #264b8d;
+  color: #30a3db;
+  border-bottom: solid 1px #30a3db;
 }
 
 /* =====  セクションタイトルA　 ===== */
@@ -617,3 +662,14 @@ img {
     }
   }
 }
+
+/* =====  セクションタイトル下のテキスト　 ===== */
+.main-txt {
+  text-align: center;
+  margin-bottom: 100px;
+   @include media-tab-s {
+     text-align: left;
+     margin-bottom: 50px;
+   }
+}
+
