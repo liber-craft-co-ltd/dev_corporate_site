@@ -19,11 +19,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Oxanium:wght@300&family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="../image/common/favicon.ico">
-    <link rel="stylesheet" href="../css/destyle.css">
+    <!-- <link rel="stylesheet" href="../css/destyle.css"> -->
+    <link rel="stylesheet" href="../css/pages/styles_news.css"/>
     <link rel="stylesheet" href="../css/pages/sub-common.css" />
     <link rel="stylesheet" href="../css/pages/styles_main.css">
+
 </head>
-<body>
+<body class="news-page">
     <header class="header_top">
         <div class="header_wap">
             <div class="LC_logo">
@@ -34,7 +36,7 @@
 
             <!-- メニューITEM -->
             <ul class="nav_item menu">
-                <li class="nav_item_line nav_top">
+                <li class="nav_item_line">
                     <a href="/">TOP</a>
                 </li>
                 <li class="nav_item_line nav_service menu_appear_submenu">
@@ -45,7 +47,7 @@
                         <li><a href="/school/craft-college/">スクール事業（クラフトカレッジ）</a></li>
                     </ul>
                 </li>
-                <li class="nav_item_line nav_newsblog">
+                <li class="nav_item_line nav_newsblog active">
                     <a href="../news.html">NEWS</a>
                 </li>
                 <li class="nav_item_line nav_about">
@@ -64,7 +66,7 @@
         <div class="sp-menu">
             <div class="topLogo">
                 <a href="/">
-                <img src="../image/common/Libercraft_yoko_S.png" alt="" width="50px">
+                <img src="../image/common/libercraft_yoko.png" alt="" width="50px">
                 </a>
             </div>
             <span class="material-icons" id="open">menu</span>
@@ -98,13 +100,47 @@
             <h3>
                 NEWS
             </h3>
+            <p>ニュース</p>
         </div>
     </section>
 
     <section class="sec_news_post">
         <div class="container">
-            <!-- Newsの詳細をJavascriptで描画 -->
-            <div id="news_post_detail"></div>
+            <div id="news_post_detail">
+                    <div class="news_post_head">
+                        <div class="news_post_news_option_area">
+                            <div class="news_post_date">2023.08.24</div>
+                            <div class="news_post_category">お知らせ</div>
+                        </div>
+                        <div class="news_post_title">『Excelで手を動かしながら学ぶ数理最適化』発売記念！ 第1章無料公開フェアを8月24日（木）より開催</div>
+                        </div>
+                        <div class="news_post_content">
+                        <div class="news_post_img">
+                            <img src="../image/news/post/2023-08-24.png" alt="">
+                        </div>
+                        <div class="news_post_body">
+                            <div>
+                                <p>弊社代表の三好が執筆した『Excelで手を動かしながら学ぶ数理最適化』の発売を記念して、第1章の無料公開を2023年8月24日（木）から8月31日（木）まで実施いたします。<br>また同期間に、関連書の全文無料公開＆電子書籍50%OFFフェアも実施します。
+                                </p>
+                            </div>
+                            <div>
+                                <p><span class="bold">■新刊『Excelで手を動かしながら学ぶ数理最適化』の第1章無料公開を実施</span>
+                                    数理最適化は、ビジネスや日常生活で最良な意思決定を行うために役立つ技術です。<br>
+                                    たとえば「売り上げを最大化する商品価格を決めたい」「リスクを最小化する投資ポートフォリオを組みたい」といった場合に、目的の値を最大化（または最小化）するための最適解を効率的に求められます。<br>このたび、新刊『Excelで手を動かしながら学ぶ数理最適化』の発売を記念して、本書の冒頭～第1章を無料公開するフェアを実施いたします。ビジネスの課題解決手法としても注目を集める数理最適化は、データサイエンス入門にも最適です。
+                                </p>
+                            </div>
+                            <div>
+                                <p><span class="bold">■データサイエンス入門に役立つ関連書が全文無料公開＆電子書籍50%OFFに！</span>
+                                    さらに今回のフェアでは、新刊『Excelで手を動かしながら学ぶ数理最適化』とならびデータサイエンス入門に役立つ関連書2タイトル『ビジネスの現場で使えるAI&データサイエンスの全知識』『統計学の基礎から学ぶ Excelデータ分析の全知識』の全文を無料公開し、電子書籍を50%FFで販売します。詳しくは下記のフェア特設ページをご確認ください。
+                                </p>
+                            </div>
+                            <p><span class="bold"> ＜フェア特設ページ＞</span><a href="https://book.impress.co.jp/items/ds" target="__blank">https://book.impress.co.jp/items/ds</a>
+                            <span>フェア期間：2023年8月24日（木）から8月31日（木）まで</span></p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <a href="/news.html" class="back-to-lists">記事一覧に戻る</a>
         </div>
     </section>
 
@@ -132,8 +168,6 @@
     <p class="copy">© LiberCraft Co.,Ltd All rights Reserved</p>
   </footer>
 
-    <script src="../js/cms/news_common.js"></script>
-    <script src="../js/cms/news_detail.js"></script>
     <script src="../js/nav.js"></script>
 
 </body>

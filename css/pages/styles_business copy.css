@@ -555,6 +555,13 @@
 
 .cv-contact {
   background-color: #eef9fb;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 750px) {
+  .cv-contact {
+    margin-bottom: 50px;
+  }
 }
 
 .cv-contact .container {
@@ -628,7 +635,7 @@
   margin-bottom: 30px;
 }
 
-.cv-contact .contact_btn {
+.cv-contact .cv-contact_btn {
   max-width: 440px;
   padding: 12px;
   display: -webkit-box;
@@ -645,36 +652,35 @@
   font-size: 18px;
   letter-spacing: 1px;
   font-family: "Oxygen", cursive;
-  margin-left: 0;
 }
 
 @media screen and (max-width: 750px) {
-  .cv-contact .contact_btn {
+  .cv-contact .cv-contact_btn {
     max-width: 100%;
   }
 }
 
-.cv-contact .contact_btn__img {
+.cv-contact .cv-contact_btn__img {
   width: 20px;
   margin-right: 10px;
   padding-bottom: 12px;
 }
 
 @media screen and (max-width: 768px) {
-  .cv-contact .contact_btn__img {
+  .cv-contact .cv-contact_btn__img {
     width: 25px;
     padding-bottom: 11px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .cv-contact .contact_btn {
+  .cv-contact .cv-contact_btn {
     margin: 0 auto;
     max-width: 100%;
   }
 }
 
-.cv-contact .contact_btn:hover {
+.cv-contact .cv-contact_btn:hover {
   background-color: #30a3db;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
@@ -1187,4 +1193,4 @@
     font-size: 1.2rem;
   }
 }
-/*# sourceMappingURL=styles_business.css.map */
+/*# sourceMappingURL=styles_business copy.css.map */
