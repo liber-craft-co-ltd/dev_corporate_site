@@ -165,11 +165,13 @@
 .nav_item_line a,
 .footer__links-lists .lists-item a,
 .nav_contact a,
-.overlay a {
+.overlay a,
+.contact a {
   background-color: transparent;
   text-decoration: none;
   color: inherit;
 }
+
 
 .back-to-lists {
   display: block;
