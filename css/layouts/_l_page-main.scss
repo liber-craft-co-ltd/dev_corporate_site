@@ -260,7 +260,7 @@
     p {
       margin: 0;
     }
-    
+
     &__img {
       width: 30px;
       margin-right: 10px;
@@ -325,11 +325,277 @@
 /* ********************* */
 /* ABOUT */
 /* ********************* */
-.message,
-.identity {
+
+.about-section-ttl {
+  color: $blue;
+  margin-bottom: 50px;
+  &_en {
+    font-family: "Oxygen", cursive;
+    font-size: 4.2rem;
+    font-weight: bold;
+    @include media-tab-s {
+      font-size: 3.2rem;
+    }
+  }
+  &_ja {
+    font-size: 1.8rem;
+    @include media-tab-s {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.member {
+  margin-top: 100px;
   margin-bottom: 100px;
   @include media-tab-s {
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .about-section-ttl {
+    text-align: center;
+  }
+
+  .small-ttl {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    @include media-tab-s {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+  }
+
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e6e6e6;
+    @include media-tab-s {
+      flex-direction: column;
+    }
+    .left {
+      width: 50%;
+      @include media-tab-s {
+        max-width: 450px;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+
+    .right {
+      width: 45%;
+      @include media-tab-s {
+        width: 100%;
+      }
+    }
+
+    .company-name,
+    .position {
+      font-size: 1.2rem;
+      @include media-tab-s {
+        text-align: center;
+      }
+    }
+    .name {
+      font-size: 2.4rem;
+      color: #30a3db;
+      margin-bottom: 30px;
+      font-weight: bold;
+      @include media-tab-s {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  .works {
+    .contents {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-tab-s {
+        flex-direction: column-reverse;
+      }
+    }
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-bottom: 1px solid #e6e6e6;
+
+    .left {
+      width: 70%;
+      @include media-tab-s {
+        max-width: 450px;
+        width: 100%;
+        margin-top: 15px;
+      }
+      .works-ttl {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        @include media-tab-s {
+          font-size: 1.2rem;
+          text-indent: -1em;
+          padding-left: 1em;
+        }
+      }
+    }
+
+    .right {
+      width: 25%;
+      @include media-tab-s {
+        max-width: 450px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+
+    .company-name,
+    .position {
+      font-size: 1.2rem;
+      @include media-tab-s {
+        text-align: center;
+      }
+    }
+    .name {
+      font-size: 2.4rem;
+      color: #30a3db;
+      margin-bottom: 30px;
+      font-weight: bold;
+      @include media-tab-s {
+        margin-bottom: 15px;
+        text-align: center;
+      }
+    }
+  }
+
+  .books {
+    padding-top: 50px;
+    .contents-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include media-tab-s {
+        flex-direction: column;
+        justify-content: start;
+      }
+    }
+    .list-item {
+      width: 32%;
+      @include media-tab-s {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .img {
+        max-width: 110px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        @include media-tab-s {
+          width: 20%;
+          margin-bottom: 0;
+          margin-right: 20px;
+        }
+      }
+      .img-ttl {
+        text-align: center;
+        font-size: 1.2rem;
+        @include media-tab-s {
+          text-align: left;
+          width: 75%;
+        }
+      }
+    }
+  }
+}
+
+.main-contents {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+  @include media-tab-s {
+    padding: 50px 0;
+  }
+
+  &__container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    @include media-tab-s {
+      width: 100%;
+    }
+  }
+
+  .about-section-ttl {
+    text-align: left;
+    @include media-tab-s {
+      margin-bottom: 20px;
+    }
+  }
+
+  .value {
+    margin-bottom: 100px;
+    @include media-tab-s {
+      margin-bottom: 50px;
+    }
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tab-s {
+      flex-direction: column;
+    }
+    &.reverce {
+      flex-direction: row-reverse;
+      @include media-tab-s {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .img-area {
+    width: 40%;
+    @include media-tab-s {
+      width: 95%;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+    &.reverce {
+      @include media-tab-s {
+        margin-left: auto;
+        width: 95%;
+        margin-right: 0;
+      }
+    }
+  }
+  .txt-area {
+    width: 50%;
+    @include media-tab-s {
+      width: 90%;
+    }
+  }
+  .txt p {
+    margin-bottom: 20px;
+    @include media-tab-s {
+      margin-bottom: 10px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.message,
+.identity {
+  margin: 100px 0;
+  @include media-tab-s {
+    margin: 50px 0;
   }
   .contents-wrap {
     display: flex;
@@ -357,6 +623,12 @@
         width: 100%;
       }
     }
+  }
+}
+
+.identity {
+  .about-section-ttl {
+    text-align: center;
   }
 }
 

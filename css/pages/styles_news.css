@@ -93,6 +93,8 @@
   /**
  * Render the `main` element consistently in IE.
  */
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
   /* Vertical rhythm */
   /* ============================================ */
   /* Headings */
@@ -137,12 +139,16 @@
   padding-left: 1.5em;
 }
 
-.news-page p {
+.news-page .sec_news_post p {
   margin-bottom: 20px;
 }
 
 .news-page main {
   display: block;
+}
+
+.news-page p {
+  margin: 0;
 }
 
 .news-page h1,
@@ -161,6 +167,16 @@
 .news-page .footer .footer__links-lists {
   list-style: none;
   padding: 0;
+}
+
+.sec_news_post {
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 768px) {
+  .sec_news_post {
+    margin-top: 80px;
+  }
 }
 
 .nav_item_line a,
