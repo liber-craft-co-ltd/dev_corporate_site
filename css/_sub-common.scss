@@ -370,18 +370,23 @@ img {
 /* ボタン */
 /* ********************* */
 
-.btn--with-arrow {
-  position: relative;
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 18px;
   display: inline-block;
-  padding: 10px 40px 13px;
-  border: 2px solid #264b8d;
+  padding: 15px 40px 15px;
+  border: 1px solid #264b8d;
   background-color: #fff;
   color: #264b8d;
+  min-width: 300px;
+  &:hover {
+  color: #30a3db;
+  border: 1px solid #30a3db;
+  transition: all 0.4s ease-out;
+}
   @include media-tab-s {
     width: 100%;
     font-size: 16px;
@@ -544,44 +549,49 @@ img {
       margin-bottom: 30px;
     }
   }
-  &__contact-btn {
-    max-width: 300px;
-    width: 100%;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #264b8d;
-    color: #fff;
-    font-size: 18px;
-    font-family: "Oxygen", cursive;
-    @include media-tab-s {
-      max-width: 90%;
-      width: 375px;
-      margin: 0 auto;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    &__img {
-      width: 30px;
-      margin-right: 10px;
-      padding-bottom: 7px;
-      @include media-tab-s {
-        width: 25px;
-        padding-bottom: 11px;
-      }
-    }
-
-    &:hover {
-      background-color: #30a3db;
-      transition: all 0.1s ease-out;
-    }
-  }
 }
 
+.contact-btn {
+  max-width: 300px;
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #264b8d;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Oxygen", cursive;
+  @include media-tab-s {
+    max-width: 100%;
+    padding: 12px 30px;
+    width: 335px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__img {
+    width: 20px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    img {
+      vertical-align: middle;
+    }
+    @include media-tab-s {
+      width: 25px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &:hover {
+    background-color: #30a3db;
+    transition: all 0.1s ease-out;
+  }
+}
 /* ********************* */
 /* サブキービジュアル */
 /* ********************* */

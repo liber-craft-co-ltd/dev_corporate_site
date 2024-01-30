@@ -151,6 +151,17 @@
   }
 }
 
+.sub-service .list-item .btn {
+  max-width: 280px;
+}
+
+@media screen and (max-width: 768px) {
+  .sub-service .list-item .btn {
+    min-width: 100%;
+    margin-top: 30px;
+  }
+}
+
 .sub-service .bold {
   display: block;
 }

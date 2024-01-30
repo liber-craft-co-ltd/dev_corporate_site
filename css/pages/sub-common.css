@@ -403,8 +403,7 @@ img {
 /* ********************* */
 /* ボタン */
 /* ********************* */
-.btn--with-arrow {
-  position: relative;
+.btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,14 +416,22 @@ img {
   text-align: center;
   font-size: 18px;
   display: inline-block;
-  padding: 10px 40px 13px;
-  border: 2px solid #264b8d;
+  padding: 15px 40px 15px;
+  border: 1px solid #264b8d;
   background-color: #fff;
   color: #264b8d;
+  min-width: 300px;
+}
+
+.btn:hover {
+  color: #30a3db;
+  border: 1px solid #30a3db;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 @media screen and (max-width: 768px) {
-  .btn--with-arrow {
+  .btn {
     width: 100%;
     font-size: 16px;
   }
@@ -647,7 +654,7 @@ img {
   }
 }
 
-.key-visual__contact-btn {
+.contact-btn {
   max-width: 300px;
   width: 100%;
   padding: 15px 30px;
@@ -667,31 +674,37 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .key-visual__contact-btn {
-    max-width: 90%;
-    width: 375px;
+  .contact-btn {
+    max-width: 100%;
+    padding: 12px 30px;
+    width: 335px;
     margin: 0 auto;
+    margin-top: 30px;
   }
 }
 
-.key-visual__contact-btn p {
+.contact-btn p {
   margin: 0;
 }
 
-.key-visual__contact-btn__img {
-  width: 30px;
+.contact-btn__img {
+  width: 20px;
   margin-right: 10px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
+}
+
+.contact-btn__img img {
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 768px) {
-  .key-visual__contact-btn__img {
+  .contact-btn__img {
     width: 25px;
-    padding-bottom: 11px;
+    padding-bottom: 5px;
   }
 }
 
-.key-visual__contact-btn:hover {
+.contact-btn:hover {
   background-color: #30a3db;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
