@@ -318,6 +318,26 @@ a {
   border-right: solid 2px #EF9635;
 }
 
+.btn.orange-border {
+  color: #EF9635;
+  border: 2px solid #ef9635;
+}
+
+.btn.orange-border::after {
+  border-top: solid 2px #EF9635;
+  border-right: solid 2px #EF9635;
+}
+
+.btn.orange-border:hover {
+  background-color: #EF9635;
+  color: #fff;
+}
+
+.btn.orange-border:hover::after {
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
+
 .btn.red {
   background-color: #ED7973;
   color: #fff;
@@ -379,6 +399,14 @@ a {
 
 .txt-btn.under-line {
   text-decoration: underline;
+}
+
+.text-link-btn {
+  text-decoration: underline;
+}
+
+.text-link-btn:hover {
+  opacity: 0.8;
 }
 
 .fixed-btn {

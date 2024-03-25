@@ -592,46 +592,6 @@ img {
     transition: all 0.1s ease-out;
   }
 }
-/* ********************* */
-/* サブキービジュアル */
-/* ********************* */
-// .sub_page_kv {
-//   max-width: 1200px;
-//   width: 90%;
-//   margin: 0 auto;
-//   background-repeat: no-repeat;
-//   margin-bottom: 100px;
-//   background-position-x: 100%;
-//   background-size: 60%;
-//   margin-top: 250px;
-//   padding-bottom: 250px;
-//   &.rectuit {
-//     background-image: url(../../image/recruit/recruit_key_back.jpg);
-//   }
-//   &.contact {
-//     background-image: url(../../image/contact/contact_key_back.jpg);
-//   }
-//   &.about {
-//     background-image: url(../../image/about/about_key_back.jpg);
-//   }
-//   &.news-kv {
-//     background-image: url(../../image/news/news_key_back_2.jpg);
-//   }
-//   &.service {
-//     background-image: url(../../image/service/service_key_back_1.jpg);
-//   }
-//   &.service-sec {
-//     background-image: url(../../image/service/service_key_back_2.jpg);
-//   }
-//   @include media-tab-s {
-//     background-size: 100%;
-//   }
-//   @include media-sp {
-//     margin-top: 230px;
-//     padding-bottom: 70px;
-//     margin-bottom: 80px;
-//   }
-// }
 .sub_page_kv {
   width: 100%;
   margin-top: 84px;

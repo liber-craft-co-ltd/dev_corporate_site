@@ -15,8 +15,9 @@ main {
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 100px;
-  padding-top: 10px;
-  background-image: url("../../../image/school/craft-college/mv_background.png");
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-image: url("../../image/school/craft-college/mv_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -31,13 +32,13 @@ main {
     margin-top: 68px;
   }
   @include media-sp {
-    background-image: url("../../../image/school/craft-college/mv_background_sp.png");
+    background-image: url("../../image/school/craft-college/mv_background_sp.png");
     padding: 20px;
-    padding-bottom: 0;
+    padding-bottom: 150px;
   }
   &__container {
     position: relative;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 30px;
@@ -114,30 +115,34 @@ main {
     }
   }
 
+  // .white-back-wrap {
+  //   background-color: #fff;
+  //   transform: matrix(0.98, 0, -0.18, 1, 0, 0);
+  //   padding: 40px 50px 40px 80px;
+  //   margin-bottom: 30px;
+  //   box-shadow: 0px 0px 16.64128px 8.32064px rgba(0, 0, 0, 0.08);
+  //   @include media-tab {
+  //     padding: 40px 50px 30px 30px;
+  //   }
+  //   @include media-tab-s {
+  //     width: 70%;
+  //     padding: 30px 40px 10px 30px;
+  //   }
+  //   @include media-sp {
+  //     margin-bottom: 60px;
+  //     width: 100%;
+  //     padding: 0;
+  //     background-color: transparent;
+  //     transform: none;
+  //     box-shadow: none;
+  //   }
+  //   @media screen and (max-width: 375px) {
+  //     margin-bottom: 20px;
+  //   }
+  // }
+
   .white-back-wrap {
-    background-color: #fff;
-    transform: matrix(0.98, 0, -0.18, 1, 0, 0);
-    padding: 40px 50px 40px 80px;
-    margin-bottom: 20px;
-    box-shadow: 0px 0px 16.64128px 8.32064px rgba(0, 0, 0, 0.08);
-    @include media-tab {
-      padding: 40px 50px 30px 30px;
-    }
-    @include media-tab-s {
-      width: 70%;
-      padding: 30px 40px 10px 30px;
-    }
-    @include media-sp {
-      margin-bottom: 60px;
-      width: 100%;
-      padding: 0;
-      background-color: transparent;
-      transform: none;
-      box-shadow: none;
-    }
-    @media screen and (max-width: 375px) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 30px;
   }
   .main-message {
     color: $blue;
@@ -186,55 +191,22 @@ main {
       margin-bottom: 10px;
     }
   }
-
-  .sub-message {
-    max-width: 550px;
-    font-size: 2.4rem;
-    line-height: 1.75;
-    font-weight: bold;
-    color: $blue;
-    margin-left: 70px;
-    margin-bottom: 25px;
-    @include media-tab {
-      margin-left: 30px;
-    }
-    @include media-tab-s {
-      margin-left: 20px;
-      margin-bottom: 15px;
-    }
-    @include media-sp {
-      font-size: 1.6rem;
-      width: 100%;
-      margin-bottom: 0;
-      margin-left: 0px;
-    }
-    .back-color {
-      color: $blue;
-      background-color: #fff;
-      padding: 2px 4px;
-      font-weight: bold;
-    }
-    @include media-tab {
-      font-size: 1.4rem;
-    }
-    @include media-sp {
-      margin-bottom: 15px;
-    }
-  }
-
   .point-lists {
     display: flex;
-
+    margin-bottom: 30px;
     @include media-sp {
       flex-direction: column;
       margin-top: 30px;
+      margin-bottom: 10px;
     }
     .list-item {
-      text-align: center;
       margin-right: 5px;
       border-right: 1px solid $black;
-      display: inline-block;
-      padding: 20px;
+      &:last-child {
+        border-right: none;
+      }
+      display: flex;
+      padding: 0 50px;
       color: $black;
       @include media-tab-s {
         margin-right: 3px;
@@ -252,39 +224,127 @@ main {
         width: 45px;
         margin: 0 auto;
         margin-bottom: 15px;
+        margin-right: 20px;
         height: 45px;
         @include media-sp {
-          height: 30px;
-          width: 30px;
-          margin-right: 10px;
+          height: 45px;
+          width: 45px;
+          margin-right: 15px;
           margin-left: 0;
         }
       }
       &_ttl {
         display: block;
         font-size: 2.4rem;
-        padding: 0 5px;
         font-weight: bold;
         line-height: 1;
         @media screen and (max-width: 1200px) {
           font-size: 1.6rem;
-          padding: 0 3px;
           letter-spacing: 0;
         }
         @include media-sp {
           text-align: left;
+          font-size: 2rem;
+          margin-bottom: 5px;
         }
       }
       &_txt {
         font-size: 1.8rem;
         @include media-tab {
-          padding: 3px 5px;
-          padding-top: 0;
           letter-spacing: 0;
           font-size: 1.1rem;
         }
+        @include media-sp {
+          font-size: 1.4rem;
+        }
       }
     }
+  }
+
+  .kyuhukin {
+    max-width: 650px;
+    bottom: -180px;
+
+    @include media-tab {
+      max-width: 400px;
+    }
+    @include media-sp {
+      position: absolute;
+    }
+    &__ttl {
+      text-align: center;
+      color: #fff;
+      font-size: 2.4rem;
+      padding: 10px 0;
+      background: linear-gradient(-20deg, #062e75 0%, #ef9635 100%);
+      @include media-tab {
+        font-size: 1.4rem;
+      }
+    }
+    .off {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      padding: 20px;
+      @include media-sp {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+      &__txt {
+        width: 60%;
+        @include media-sp {
+          width: 100%;
+        }
+      }
+      .btn {
+        width: 38%;
+        padding: 20px;
+        font-size: 1.6rem;
+        @include media-tab {
+          font-size: 1.2rem;
+        }
+        @include media-sp {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// .kyuhukin-fixed-btn {
+//   position: fixed;
+//   right: 20px;
+//   bottom: 20px;
+//   width: 320px;
+//   z-index: 100;
+//   transition: 0.3s;
+//   opacity: 0;
+//   visibility: hidden;
+//   @include media-sp {
+//     width: 90%;
+//     bottom: 20px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//   }
+
+// }
+// .active {
+//   opacity: 1;
+//   visibility: visible;
+// }
+.kyuhukin-fixed-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 320px;
+  z-index: 100;
+  transition: 0.3s;
+  @include media-sp {
+    width: 90%;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -302,6 +362,9 @@ main {
   );
   @include media-tab-s {
     padding: 50px 0;
+  }
+  @include media-sp {
+    padding-top: 120px;
   }
   .btn {
     width: 455px;
@@ -937,14 +1000,14 @@ main {
   }
   &__ttl {
     padding: 70px 0 150px;
-    background-image: url("../../../image/school/craft-college/thats-why.png");
+    background-image: url("../../image/school/craft-college/thats-why.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
     @include media-sp {
-      background-image: url("../../../image/school/craft-college/thats-why_sp.png");
+      background-image: url("../../image/school/craft-college/thats-why_sp.png");
       padding: 30px 0;
     }
   }
@@ -2320,9 +2383,45 @@ main {
   @include media-tab-s {
     padding-top: 50px;
   }
-  &__txt {
+  .kyuhukin {
+    max-width: 870px;
+    margin: 0 auto;
+    font-size: 2rem;
     margin-bottom: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-sp {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .left {
+      width: 38%;
+
+      @include media-sp {
+        width: 70%;
+        margin-bottom: 20px;
+      }
+    }
+    .right {
+      width: 55%;
+      @include media-sp {
+        width: 100%;
+      }
+    }
+    .slope {
+      font-size: 3.2rem;
+    }
+    @include media-sp {
+      text-align: center;
+      flex-direction: column;
+    }
+    .red-background {
+      background-color: $red;
+      color: #fff;
+      display: inline-block;
+      padding: 3px 7px;
+    }
     .main {
       font-size: 2.4rem;
       margin-bottom: 20px;
@@ -2338,6 +2437,21 @@ main {
       @include media-sp {
         text-align: left;
       }
+    }
+  }
+  &__figure {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    img {
+      margin-bottom: 30px;
+      @include media-sp {
+        margin-bottom: 10px;
+      }
+    }
+    .btn {
+      max-width: 450px;
+      margin: 0 auto;
     }
   }
   .sub-main {
@@ -2493,7 +2607,7 @@ main {
     }
   }
   .supplementation {
-    max-width: 992px;
+    max-width: 950px;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -2803,19 +2917,19 @@ main {
       background-position: center;
       min-height: 400px;
       &.first {
-        background-image: url("../../../image/school/craft-college/curriculum_1.png");
+        background-image: url("../../image/school/craft-college/curriculum_1.png");
       }
       &.sec {
-        background-image: url("../../../image/school/craft-college/curriculum_2.png");
+        background-image: url("../../image/school/craft-college/curriculum_2.png");
       }
       &.third {
-        background-image: url("../../../image/school/craft-college/curriculum_3.png");
+        background-image: url("../../image/school/craft-college/curriculum_3.png");
       }
       &.forth {
-        background-image: url("../../../image/school/craft-college/curriculum_4.png");
+        background-image: url("../../image/school/craft-college/curriculum_4.png");
       }
       &.fifth {
-        background-image: url("../../../image/school/craft-college/curriculum_5.png");
+        background-image: url("../../image/school/craft-college/curriculum_5.png");
       }
       @include media-tab-s {
         width: 50%;
@@ -3390,12 +3504,12 @@ main {
     text-align: center;
     color: #fff;
     padding: 150px 0;
-    background-image: url("../../../image/school/craft-college/listen_background.png");
+    background-image: url("../../image/school/craft-college/listen_background.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
     @include media-tab-s {
-      background-image: url("../../../image/school/craft-college/listen_background_sp.png");
+      background-image: url("../../image/school/craft-college/listen_background_sp.png");
       font-size: 2.4rem;
       padding: 100px 0;
     }
@@ -3604,27 +3718,27 @@ main {
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
   }
   &.first {
-    background-image: url("../../../image/school/craft-college/cv_background_1.png");
+    background-image: url("../../image/school/craft-college/cv_background_1.png");
     @include media-sp {
-      background-image: url("../../../image/school/craft-college/cv_background_1_sp.png");
+      background-image: url("../../image/school/craft-college/cv_background_1_sp.png");
     }
   }
   &.sec {
-    background-image: url("../../../image/school/craft-college/cv_background_2.png");
+    background-image: url("../../image/school/craft-college/cv_background_2.png");
     @include media-sp {
-      background-image: url("../../../image/school/craft-college/cv_background_2_sp.png");
+      background-image: url("../../image/school/craft-college/cv_background_2_sp.png");
     }
   }
   &.third {
-    background-image: url("../../../image/school/craft-college/cv_background_3.png");
+    background-image: url("../../image/school/craft-college/cv_background_3.png");
     @include media-sp {
-      background-image: url("../../../image/school/craft-college/cv_background_3_sp.png");
+      background-image: url("../../image/school/craft-college/cv_background_3_sp.png");
     }
   }
   &.fourth {
-    background-image: url("../../../image/school/craft-college/cv_background_4.png");
+    background-image: url("../../image/school/craft-college/cv_background_4.png");
     @include media-sp {
-      background-image: url("../../../image/school/craft-college/cv_background_4_sp.png");
+      background-image: url("../../image/school/craft-college/cv_background_4_sp.png");
     }
   }
 
@@ -3874,7 +3988,7 @@ main {
     margin-right: 20px;
     font-weight: bold;
     margin-bottom: 15px;
-    &:last-child{
+    &:last-child {
       margin-bottom: 0;
     }
     @include media-sp {
@@ -4002,4 +4116,174 @@ main {
 
 .scroll-infinity__list--left {
   animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+
+.sec_1,
+.sec_2,
+.sec_3 {
+  padding-bottom: 100px;
+  @include media-tab {
+    padding-bottom: 50px;
+  }
+}
+
+.under-kyuhukin {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 300;
+  @include media-tab {
+    padding-top: 150px;
+  }
+  @include media-sp {
+padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .sec-ttl {
+    font-weight: 500;
+    text-align: center;
+    &__main {
+      text-align: center;
+      font-size: 3.2rem;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 50px;
+      @include media-tab {
+        font-size: 2.4rem;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: $black;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .txt-area {
+    font-weight: 300;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    .txt {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-details {
+    max-width: 750px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    .sub-txt {
+      margin-bottom: 30px;
+      @include media-tab {
+        margin-bottom: 15px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    .list-ttl {
+      font-weight: 500;
+      font-size: 1.8rem;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .kyuhukin-lists {
+    .list-item {
+      margin-bottom: 30px;
+      @include media-tab {
+        margin-bottom: 15px;
+      }
+      &__ttl {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .list-item-link {
+    font-size: 1.2rem;
+    text-decoration: underline;
+      &:hover {
+    opacity: 0.8;
+
+  }
+  }
+
+  .caution {
+    color: #828282;
+    font-size: 1.2rem;
+    font-weight: 300;
+    @include media-tab {
+      font-size: 1rem;
+    }
+  }
+  ol {
+    text-indent: -1em;
+    padding-left: 1em;
+  }
+  .sec_3 {
+    .figure {
+      margin-bottom: 50px;
+      @include media-tab {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .txt-box {
+    &__ttl {
+      font-weight: 500;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    background-color: #f7f7f7;
+    padding: 30px;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    @include media-tab {
+      font-size: 1.2rem;
+      padding: 20px;
+      margin-top: 10px;
+    }
+  }
+
+  .sec_4 {
+
+    .btn {
+      margin-top: 20px;
+      max-width: 250px;
+      @include media-tab-s {
+        max-width: 100%;
+      }
+    }
+  }
+  .btn-area {
+    margin-top: 100px;
+    @include media-tab {
+      margin-top: 50px;
+    }
+    .btn {
+      max-width: 450px;
+      margin: 0 auto;
+      @include media-tab-s {
+        max-width: 100%;
+      }
+    }
+  }
 }

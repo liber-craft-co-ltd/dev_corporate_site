@@ -18,8 +18,9 @@ main {
   max-width: 1440px;
   margin: 0 auto;
   margin-top: 100px;
-  padding-top: 10px;
-  background-image: url("../../../image/school/craft-college/mv_background.png");
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-image: url("../../image/school/craft-college/mv_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -45,15 +46,15 @@ main {
 
 @media screen and (max-width: 750px) {
   .key-visual {
-    background-image: url("../../../image/school/craft-college/mv_background_sp.png");
+    background-image: url("../../image/school/craft-college/mv_background_sp.png");
     padding: 20px;
-    padding-bottom: 0;
+    padding-bottom: 150px;
   }
 }
 
 .key-visual__container {
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -164,45 +165,7 @@ main {
 }
 
 .key-visual .white-back-wrap {
-  background-color: #fff;
-  -webkit-transform: matrix(0.98, 0, -0.18, 1, 0, 0);
-          transform: matrix(0.98, 0, -0.18, 1, 0, 0);
-  padding: 40px 50px 40px 80px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 0px 0px 16.64128px 8.32064px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 16.64128px 8.32064px rgba(0, 0, 0, 0.08);
-}
-
-@media screen and (max-width: 1025px) {
-  .key-visual .white-back-wrap {
-    padding: 40px 50px 30px 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .key-visual .white-back-wrap {
-    width: 70%;
-    padding: 30px 40px 10px 30px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .key-visual .white-back-wrap {
-    margin-bottom: 60px;
-    width: 100%;
-    padding: 0;
-    background-color: transparent;
-    -webkit-transform: none;
-            transform: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .key-visual .white-back-wrap {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 30px;
 }
 
 .key-visual .main-message {
@@ -270,61 +233,11 @@ main {
   }
 }
 
-.key-visual .sub-message {
-  max-width: 550px;
-  font-size: 2.4rem;
-  line-height: 1.75;
-  font-weight: bold;
-  color: #062E75;
-  margin-left: 70px;
-  margin-bottom: 25px;
-}
-
-@media screen and (max-width: 1025px) {
-  .key-visual .sub-message {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .key-visual .sub-message {
-    margin-left: 20px;
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .key-visual .sub-message {
-    font-size: 1.6rem;
-    width: 100%;
-    margin-bottom: 0;
-    margin-left: 0px;
-  }
-}
-
-.key-visual .sub-message .back-color {
-  color: #062E75;
-  background-color: #fff;
-  padding: 2px 4px;
-  font-weight: bold;
-}
-
-@media screen and (max-width: 1025px) {
-  .key-visual .sub-message {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .key-visual .sub-message {
-    margin-bottom: 15px;
-  }
-}
-
 .key-visual .point-lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 750px) {
@@ -334,16 +247,22 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
 
 .key-visual .point-lists .list-item {
-  text-align: center;
   margin-right: 5px;
   border-right: 1px solid #474847;
-  display: inline-block;
-  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 50px;
   color: #474847;
+}
+
+.key-visual .point-lists .list-item:last-child {
+  border-right: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -372,14 +291,15 @@ main {
   width: 45px;
   margin: 0 auto;
   margin-bottom: 15px;
+  margin-right: 20px;
   height: 45px;
 }
 
 @media screen and (max-width: 750px) {
   .key-visual .point-lists .list-item_img {
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+    margin-right: 15px;
     margin-left: 0;
   }
 }
@@ -387,7 +307,6 @@ main {
 .key-visual .point-lists .list-item_ttl {
   display: block;
   font-size: 2.4rem;
-  padding: 0 5px;
   font-weight: bold;
   line-height: 1;
 }
@@ -395,7 +314,6 @@ main {
 @media screen and (max-width: 1200px) {
   .key-visual .point-lists .list-item_ttl {
     font-size: 1.6rem;
-    padding: 0 3px;
     letter-spacing: 0;
   }
 }
@@ -403,6 +321,8 @@ main {
 @media screen and (max-width: 750px) {
   .key-visual .point-lists .list-item_ttl {
     text-align: left;
+    font-size: 2rem;
+    margin-bottom: 5px;
   }
 }
 
@@ -412,10 +332,117 @@ main {
 
 @media screen and (max-width: 1025px) {
   .key-visual .point-lists .list-item_txt {
-    padding: 3px 5px;
-    padding-top: 0;
     letter-spacing: 0;
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .key-visual .point-lists .list-item_txt {
+    font-size: 1.4rem;
+  }
+}
+
+.key-visual .kyuhukin {
+  max-width: 650px;
+  bottom: -180px;
+}
+
+@media screen and (max-width: 1025px) {
+  .key-visual .kyuhukin {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .key-visual .kyuhukin {
+    position: absolute;
+  }
+}
+
+.key-visual .kyuhukin__ttl {
+  text-align: center;
+  color: #fff;
+  font-size: 2.4rem;
+  padding: 10px 0;
+  background: linear-gradient(-20deg, #062e75 0%, #ef9635 100%);
+}
+
+@media screen and (max-width: 1025px) {
+  .key-visual .kyuhukin__ttl {
+    font-size: 1.4rem;
+  }
+}
+
+.key-visual .kyuhukin .off {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+
+@media screen and (max-width: 750px) {
+  .key-visual .kyuhukin .off {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 20px;
+  }
+}
+
+.key-visual .kyuhukin .off__txt {
+  width: 60%;
+}
+
+@media screen and (max-width: 750px) {
+  .key-visual .kyuhukin .off__txt {
+    width: 100%;
+  }
+}
+
+.key-visual .kyuhukin .off .btn {
+  width: 38%;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .key-visual .kyuhukin .off .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .key-visual .kyuhukin .off .btn {
+    width: 100%;
+  }
+}
+
+.kyuhukin-fixed-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 320px;
+  z-index: 100;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  .kyuhukin-fixed-btn {
+    width: 90%;
+    bottom: 10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
 
@@ -430,6 +457,12 @@ main {
 @media screen and (max-width: 768px) {
   .cc-campaign {
     padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .cc-campaign {
+    padding-top: 120px;
   }
 }
 
@@ -1388,7 +1421,7 @@ main {
 
 .thats-why__ttl {
   padding: 70px 0 150px;
-  background-image: url("../../../image/school/craft-college/thats-why.png");
+  background-image: url("../../image/school/craft-college/thats-why.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1398,7 +1431,7 @@ main {
 
 @media screen and (max-width: 750px) {
   .thats-why__ttl {
-    background-image: url("../../../image/school/craft-college/thats-why_sp.png");
+    background-image: url("../../image/school/craft-college/thats-why_sp.png");
     padding: 30px 0;
   }
 }
@@ -3474,36 +3507,117 @@ main {
   }
 }
 
-.price__txt {
+.price .kyuhukin {
+  max-width: 870px;
+  margin: 0 auto;
+  font-size: 2rem;
   margin-bottom: 50px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.price__txt .main {
+@media screen and (max-width: 750px) {
+  .price .kyuhukin {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.price .kyuhukin .left {
+  width: 38%;
+}
+
+@media screen and (max-width: 750px) {
+  .price .kyuhukin .left {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+}
+
+.price .kyuhukin .right {
+  width: 55%;
+}
+
+@media screen and (max-width: 750px) {
+  .price .kyuhukin .right {
+    width: 100%;
+  }
+}
+
+.price .kyuhukin .slope {
+  font-size: 3.2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .price .kyuhukin {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.price .kyuhukin .red-background {
+  background-color: #ED7973;
+  color: #fff;
+  display: inline-block;
+  padding: 3px 7px;
+}
+
+.price .kyuhukin .main {
   font-size: 2.4rem;
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .price__txt .main {
+  .price .kyuhukin .main {
     font-size: 1.6rem;
   }
 }
 
-.price__txt .sub-txt {
+.price .kyuhukin .sub-txt {
   font-size: 1.8rem;
 }
 
 @media screen and (max-width: 768px) {
-  .price__txt .sub-txt {
+  .price .kyuhukin .sub-txt {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .price__txt .sub-txt {
+  .price .kyuhukin .sub-txt {
     text-align: left;
   }
+}
+
+.price__figure {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.price__figure img {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 750px) {
+  .price__figure img {
+    margin-bottom: 10px;
+  }
+}
+
+.price__figure .btn {
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 .price .sub-main {
@@ -3701,7 +3815,7 @@ main {
 }
 
 .price .supplementation {
-  max-width: 992px;
+  max-width: 950px;
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -4140,23 +4254,23 @@ main {
 }
 
 .learning-curriculum .img-and-txt__img.first {
-  background-image: url("../../../image/school/craft-college/curriculum_1.png");
+  background-image: url("../../image/school/craft-college/curriculum_1.png");
 }
 
 .learning-curriculum .img-and-txt__img.sec {
-  background-image: url("../../../image/school/craft-college/curriculum_2.png");
+  background-image: url("../../image/school/craft-college/curriculum_2.png");
 }
 
 .learning-curriculum .img-and-txt__img.third {
-  background-image: url("../../../image/school/craft-college/curriculum_3.png");
+  background-image: url("../../image/school/craft-college/curriculum_3.png");
 }
 
 .learning-curriculum .img-and-txt__img.forth {
-  background-image: url("../../../image/school/craft-college/curriculum_4.png");
+  background-image: url("../../image/school/craft-college/curriculum_4.png");
 }
 
 .learning-curriculum .img-and-txt__img.fifth {
-  background-image: url("../../../image/school/craft-college/curriculum_5.png");
+  background-image: url("../../image/school/craft-college/curriculum_5.png");
 }
 
 @media screen and (max-width: 768px) {
@@ -4674,7 +4788,7 @@ main {
   text-align: center;
   color: #fff;
   padding: 150px 0;
-  background-image: url("../../../image/school/craft-college/listen_background.png");
+  background-image: url("../../image/school/craft-college/listen_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -4682,7 +4796,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .last-message__ttl {
-    background-image: url("../../../image/school/craft-college/listen_background_sp.png");
+    background-image: url("../../image/school/craft-college/listen_background_sp.png");
     font-size: 2.4rem;
     padding: 100px 0;
   }
@@ -4981,42 +5095,42 @@ main {
 }
 
 .cc-cta.first {
-  background-image: url("../../../image/school/craft-college/cv_background_1.png");
+  background-image: url("../../image/school/craft-college/cv_background_1.png");
 }
 
 @media screen and (max-width: 750px) {
   .cc-cta.first {
-    background-image: url("../../../image/school/craft-college/cv_background_1_sp.png");
+    background-image: url("../../image/school/craft-college/cv_background_1_sp.png");
   }
 }
 
 .cc-cta.sec {
-  background-image: url("../../../image/school/craft-college/cv_background_2.png");
+  background-image: url("../../image/school/craft-college/cv_background_2.png");
 }
 
 @media screen and (max-width: 750px) {
   .cc-cta.sec {
-    background-image: url("../../../image/school/craft-college/cv_background_2_sp.png");
+    background-image: url("../../image/school/craft-college/cv_background_2_sp.png");
   }
 }
 
 .cc-cta.third {
-  background-image: url("../../../image/school/craft-college/cv_background_3.png");
+  background-image: url("../../image/school/craft-college/cv_background_3.png");
 }
 
 @media screen and (max-width: 750px) {
   .cc-cta.third {
-    background-image: url("../../../image/school/craft-college/cv_background_3_sp.png");
+    background-image: url("../../image/school/craft-college/cv_background_3_sp.png");
   }
 }
 
 .cc-cta.fourth {
-  background-image: url("../../../image/school/craft-college/cv_background_4.png");
+  background-image: url("../../image/school/craft-college/cv_background_4.png");
 }
 
 @media screen and (max-width: 750px) {
   .cc-cta.fourth {
-    background-image: url("../../../image/school/craft-college/cv_background_4_sp.png");
+    background-image: url("../../image/school/craft-college/cv_background_4_sp.png");
   }
 }
 
@@ -5565,5 +5679,220 @@ main {
 .scroll-infinity__list--left {
   -webkit-animation: infinity-scroll-left 80s infinite linear 0.5s both;
           animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+
+.sec_1,
+.sec_2,
+.sec_3 {
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1025px) {
+  .sec_1,
+  .sec_2,
+  .sec_3 {
+    padding-bottom: 50px;
+  }
+}
+
+.under-kyuhukin {
+  padding-top: 200px;
+  padding-bottom: 100px;
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .under-kyuhukin {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+.under-kyuhukin .sec-ttl {
+  font-weight: 500;
+  text-align: center;
+}
+
+.under-kyuhukin .sec-ttl__main {
+  text-align: center;
+  font-size: 3.2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin .sec-ttl__main {
+    font-size: 2.4rem;
+  }
+}
+
+.under-kyuhukin .sec-ttl__main:before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #474847;
+  border-radius: 2px;
+}
+
+.under-kyuhukin .txt-area {
+  font-weight: 300;
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.under-kyuhukin .txt-area .txt {
+  margin-bottom: 20px;
+}
+
+.under-kyuhukin .txt-area .txt:last-child {
+  margin-bottom: 0;
+}
+
+.under-kyuhukin-details {
+  max-width: 750px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.under-kyuhukin-details .sub-txt {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin-details .sub-txt {
+    margin-bottom: 15px;
+  }
+}
+
+.under-kyuhukin-details:last-child {
+  margin-bottom: 0;
+}
+
+.under-kyuhukin-details .list-ttl {
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.under-kyuhukin .kyuhukin-lists .list-item {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin .kyuhukin-lists .list-item {
+    margin-bottom: 15px;
+  }
+}
+
+.under-kyuhukin .kyuhukin-lists .list-item__ttl {
+  font-weight: 500;
+}
+
+.under-kyuhukin .list-item-link {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.under-kyuhukin .list-item-link:hover {
+  opacity: 0.8;
+}
+
+.under-kyuhukin .caution {
+  color: #828282;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin .caution {
+    font-size: 1rem;
+  }
+}
+
+.under-kyuhukin ol {
+  text-indent: -1em;
+  padding-left: 1em;
+}
+
+.under-kyuhukin .sec_3 .figure {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin .sec_3 .figure {
+    margin-bottom: 25px;
+  }
+}
+
+.under-kyuhukin .txt-box {
+  background-color: #f7f7f7;
+  padding: 30px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
+
+.under-kyuhukin .txt-box__ttl {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin .txt-box {
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-top: 10px;
+  }
+}
+
+.under-kyuhukin .sec_4 .btn {
+  margin-top: 20px;
+  max-width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .under-kyuhukin .sec_4 .btn {
+    max-width: 100%;
+  }
+}
+
+.under-kyuhukin .btn-area {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1025px) {
+  .under-kyuhukin .btn-area {
+    margin-top: 50px;
+  }
+}
+
+.under-kyuhukin .btn-area .btn {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .under-kyuhukin .btn-area .btn {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=styles_craft-college.css.map */

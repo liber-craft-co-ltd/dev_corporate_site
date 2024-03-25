@@ -235,6 +235,23 @@ a {
       }
     }
   }
+  &.orange-border {
+
+    color: $orange;
+    border: 2px solid #ef9635;
+    &::after {
+      border-top: solid 2px $orange;
+      border-right: solid 2px $orange;
+    }
+    &:hover {
+      background-color: $orange;;
+      color: #fff;
+      &::after {
+        border-top: solid 2px $white;
+        border-right: solid 2px $white;
+      }
+    }
+  }
   &.red {
     background-color: $red;
     color: #fff;
@@ -285,6 +302,14 @@ a {
 
 .txt-btn.under-line {
   text-decoration: underline;
+}
+
+.text-link-btn {
+  text-decoration: underline;
+  &:hover {
+    opacity: 0.8;
+
+  }
 }
 
 .fixed-btn {
